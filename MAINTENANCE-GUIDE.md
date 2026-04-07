@@ -59,7 +59,7 @@ git commit -m "初始化：龙头国漆官网"
 
 # 创建GitHub私有仓库（命名：longtouguoqi-website）
 # 然后推送
-git remote add origin https://github.com/你的用户名/longtouguoqi-website.git
+git remote add origin https://github.com/yangshp1987/longtouguoqi-website.git
 git branch -M main
 git push -u origin main
 ```
@@ -90,7 +90,7 @@ git config --global user.name "小明"
 git config --global user.email "xiaoming@example.com"
 
 # 克隆仓库
-git clone https://github.com/你的用户名/longtouguoqi-website.git
+git clone https://github.com/yangshp1987/longtouguoqi-website.git
 cd longtouguoqi-website
 
 # 用VS Code打开

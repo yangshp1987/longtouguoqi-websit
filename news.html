@@ -77,7 +77,8 @@
         .section-inner{max-width:900px;margin:0 auto}
         .news-card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:16px;padding:40px;margin-bottom:24px;transition:all .3s}
         .news-card:hover{box-shadow:0 8px 30px rgba(0,0,0,.08)}
-        .news-source{display:inline-flex;align-items:center;gap:6px;background:var(--bgw);color:var(--c1);padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
+        .news-source{display:inline-flex;align-items:center;gap:8px;background:var(--bgw);color:var(--c1);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px;letter-spacing:.5px}
+        .news-source::before{content:'';width:6px;height:6px;background:var(--c1);border-radius:50%;display:inline-block}
         .news-card h2{font-family:var(--fs);font-size:22px;font-weight:700;margin-bottom:12px;line-height:1.5}
         .news-card p{font-size:15px;color:var(--tl);line-height:1.9;margin-bottom:12px}
         .news-meta{font-size:13px;color:var(--tl);opacity:.6}
@@ -85,7 +86,7 @@
         .media-wall h2{font-family:var(--fs);font-size:24px;font-weight:700;color:var(--c1);margin-bottom:24px}
         .media-wall p{font-size:15px;color:var(--tl);max-width:600px;margin:0 auto 32px}
         .logos{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
-        .logo-badge{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:16px 28px;font-family:var(--fs);font-size:16px;font-weight:600;color:var(--c1)}
+        .logo-badge{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:14px 24px;font-family:var(--fs);font-size:15px;font-weight:600;color:var(--c1);border-left:3px solid var(--gold)}
     .news-card a.news-link{display:inline-flex;align-items:center;gap:6px;color:var(--c1);font-size:14px;font-weight:600;text-decoration:none;margin-top:8px;transition:gap .2s}
         .news-card a.news-link:hover{gap:10px}
         .footer{background:#1A1A1A;color:rgba(255,255,255,.6);padding:40px 24px;text-align:center;font-size:13px}
@@ -113,7 +114,7 @@
 <div class="section-inner">
 
 <div class="news-card">
-    <div class="news-source">📰 人民日报</div>
+    <div class="news-source">人民日报</div>
     <h2>西安交大硕士返乡创业，让千年漆艺焕发新生</h2>
     <p>报道了龙头国漆创始人袁端姣放弃都市工作、回到秦巴山区传承非遗漆艺的创业故事。文章深入介绍了袁端姣如何将西安交通大学所学的现代科学知识与传统漆艺相结合，创新性开发精制彩色大漆，以及通过"企业+合作社+农户"模式带动当地漆农增收致富、助力乡村振兴的实践。</p>
     <p>报道指出，龙头国漆是陕西省级非物质文化遗产"牛王生漆油漆技艺"代表性传承人企业，已发展为拥有51人团队、500余亩漆林、10万+株漆树的全产业链企业。</p>
@@ -121,7 +122,7 @@
 </div>
 
 <div class="news-card">
-    <div class="news-source">🌐 人民网</div>
+    <div class="news-source">人民网</div>
     <h2>陕西安康：非遗传承人让"牛王漆"走向世界</h2>
     <p>人民网深度报道了龙头国漆从传统漆艺到科技创新的转型之路。文章详细介绍了龙头国漆与中国科学院、西安生漆研究所、西北农林科技大学等科研机构的合作成果，以及产品远销日本、韩国、新加坡、法国等海外市场的成功经验。</p>
     <p>报道特别关注了龙头国漆在嫁接漆苗培育方面的创新——通过科学选育优良品种，将漆树从实生苗的7-8年采割期缩短至嫁接苗的3-5年，大幅提升了漆农的经济效益。</p>
@@ -129,7 +130,7 @@
 </div>
 
 <div class="news-card">
-    <div class="news-source">📊 新浪财经</div>
+    <div class="news-source">新浪财经</div>
     <h2>生漆产业新名片：龙头国漆的全产业链布局</h2>
     <p>新浪财经从商业视角分析了龙头国漆如何通过全产业链模式实现从漆树种植到漆器成品的完整商业闭环。文章指出，龙头国漆是中国少数实现"漆树种植→生漆采割→精制加工→漆器制作→文化传播"全链条覆盖的企业，旗下"正大明"品牌在淘宝月销6000-8000+件。</p>
     <p>报道还分析了中国天然生漆产业的发展趋势，认为随着消费升级和文化自信的提升，天然大漆产品市场前景广阔，龙头国漆的全产业链模式为行业树立了标杆。</p>
@@ -137,7 +138,7 @@
 </div>
 
 <div class="news-card">
-    <div class="news-source">🧑‍💼 中国青年网</div>
+    <div class="news-source">中国青年网</div>
     <h2>"金漆世家"第五代：90后西安交大硕士的漆艺传承路</h2>
     <p>中国青年网以青年榜样的视角讲述了袁端姣的创业故事。作为"金漆世家"第五代传承人和90后高学历创业者，袁端姣用自己的行动诠释了"非遗传承不是守旧，而是让传统在创新中延续"的理念。</p>
     <p>报道中袁端姣表示："我希望更多年轻人了解大漆之美，让千年漆艺不只停留在博物馆里，而是走进现代人的日常生活。"龙头国漆的漆文化研学体验基地每年吸引大量游客前来参观学习。</p>
@@ -145,7 +146,7 @@
 </div>
 
 <div class="news-card">
-    <div class="news-source">🎭 陕西文化产业网</div>
+    <div class="news-source">陕西文化产业网</div>
     <h2>安康平利：牛王漆非遗产业赋能乡村振兴</h2>
     <p>陕西文化产业网报道了龙头国漆在安康平利县的产业带动效应。通过"企业+合作社+农户"模式，龙头国漆不仅传承了牛王漆的非遗技艺，还为当地漆农提供了稳定的增收渠道。公司每年农历五月到八月集中收购漆农生漆，保障漆农利益。</p>
     <p>目前龙头国漆已培养19名学徒，建立了"国漆非遗传承人培训基地"，为漆艺传承培育新一代力量。</p>
@@ -153,7 +154,7 @@
 </div>
 
 <div class="news-card">
-    <div class="news-source">⚙️ 中工网</div>
+    <div class="news-source">中工网</div>
     <h2>80后硕士回乡研究家乡土漆</h2>
     <p>中工网报道了袁端姣作为陕西省级大漆技艺非遗传承人，80后西安交大硕士毕业后选择回到家乡陕西平利创业，潜心研究当地有名的漆艺，助力复兴中国四大名漆——牛王漆，从不被认可到成就感满满，她让这门传统技艺被更多人看到。</p>
     <a href="https://www.workercn.cn/c/2024-11-18/8395311.shtml" target="_blank" rel="noopener" class="news-link">阅读原文 →</a>
@@ -161,7 +162,7 @@
 </div>
 
 <div class="news-card">
-    <div class="news-source">🏛️ 安康市人社局</div>
+    <div class="news-source">安康市人社局</div>
     <h2>安康市第二届金州工匠之国漆非遗传承人袁端姣</h2>
     <p>安康市人力资源和社会保障局报道了袁端姣获评安康市第二届"金州工匠"。报道介绍了袁端姣作为"金漆世家"传承人，2014年西安交通大学硕士毕业后返乡创业，创新性开发出精制彩色大漆，将安康"牛王国漆油漆技艺"推广至海内外。</p>
     <a href="https://rsj.ankang.gov.cn/Content-2282739.html" target="_blank" rel="noopener" class="news-link">阅读原文 →</a>
@@ -172,13 +173,13 @@
     <h2>媒体合作</h2>
     <p>欢迎媒体朋友联系采访报道。联系邮箱：longuyushi@gmail.com，联系电话：13072913676。</p>
     <div class="logos">
-        <div class="logo-badge">📰 人民日报</div>
-        <div class="logo-badge">🌐 人民网</div>
-        <div class="logo-badge">🧑‍💼 中国青年网</div>
-        <div class="logo-badge">📊 新浪财经</div>
-        <div class="logo-badge">🎭 陕西文化产业网</div>
-        <div class="logo-badge">⚙️ 中工网</div>
-        <div class="logo-badge">🏛️ 安康市人社局</div>
+        <div class="logo-badge">人民日报</div>
+        <div class="logo-badge">人民网</div>
+        <div class="logo-badge">中国青年网</div>
+        <div class="logo-badge">新浪财经</div>
+        <div class="logo-badge">陕西文化产业网</div>
+        <div class="logo-badge">中工网</div>
+        <div class="logo-badge">安康市人社局</div>
     </div>
 </div>
 
@@ -187,6 +188,7 @@
 
 <footer class="footer">
     <p>© 2016-2026 陕西龙头国漆文化产业有限公司 | <a href="index.html">龙头国漆官网</a> | 电话：13072913676</p>
+    <p style="margin-top:8px"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">陕ICP备2026005928号-1</a></p>
 </footer>
 
 </body>

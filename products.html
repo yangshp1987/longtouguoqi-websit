@@ -75,7 +75,8 @@
         .prod-block{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center;margin-bottom:80px;padding-bottom:80px;border-bottom:1px solid rgba(0,0,0,.06)}
         .prod-block:nth-child(even){direction:rtl}.prod-block:nth-child(even)>*{direction:ltr}
         .prod-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
-        .prod-img{aspect-ratio:4/3;background:var(--bgw);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:72px}
+        .prod-img{aspect-ratio:4/3;background:var(--bgw);border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+        .prod-img img{width:100%;height:100%;object-fit:cover;display:block}
         .prod-content h2{font-family:var(--fs);font-size:28px;font-weight:700;color:var(--c1);margin-bottom:12px}
         .prod-content p{font-size:15px;color:var(--tl);margin-bottom:16px;line-height:1.9}
         .prod-features{list-style:none;margin-bottom:24px}
@@ -113,7 +114,7 @@
 
 <!-- Product 1: Raw Lacquer -->
 <div class="prod-block" id="raw-lacquer">
-    <div class="prod-img">🪣</div>
+    <div class="prod-img"><img src="images/lacquer-materials.jpg" alt="龙头国漆天然生漆材料：底漆、推光漆、彩色大漆" loading="lazy" width="600" height="450"></div>
     <div class="prod-content">
         <h2>天然生漆材料</h2>
         <p>产自陕西安康"牛王漆"核心原产地的天然生漆，全产业链自有漆林，品质可追溯。每一滴漆都经过严格的品质检测，确保漆酚含量达标、品质稳定。</p>
@@ -138,7 +139,7 @@
 
 <!-- Product 2: Lacquerware -->
 <div class="prod-block" id="lacquerware">
-    <div class="prod-img">🍵</div>
+    <div class="prod-img"><img src="images/lacquerware-collection.jpg" alt="龙头国漆手工漆器：茶碗、漆扇、首饰盒合集" loading="lazy" width="600" height="450"></div>
     <div class="prod-content">
         <h2>漆器工艺品</h2>
         <p>非遗传承人手工制作的天然大漆漆器，每一件都使用自有漆林的正宗牛王漆，历经数十道工序精心打造。代表作《闭花羞月》系列获中国非遗博览会优秀奖。</p>
@@ -155,7 +156,7 @@
 
 <!-- Product 3: Seedlings -->
 <div class="prod-block" id="seedlings">
-    <div class="prod-img">🌱</div>
+    <div class="prod-img"><img src="images/lacquer-seedlings.jpg" alt="嫁接漆苗育苗基地实景" loading="lazy" width="600" height="450"></div>
     <div class="prod-content">
         <h2>嫁接漆苗</h2>
         <p>与西北农林科技大学合作培育的优良嫁接漆苗。相比实生苗，嫁接苗<strong>3-5年即可采割</strong>（实生苗需7-8年），产漆量更高，抗病虫害能力强。</p>
@@ -172,7 +173,7 @@
 
 <!-- Product 4: Tools -->
 <div class="prod-block" id="tools">
-    <div class="prod-img">🖌️</div>
+    <div class="prod-img"><img src="images/lacquer-tools.jpg" alt="漆艺创作全套工具：发刷、螺钿、金箔、瓦灰等" loading="lazy" width="600" height="450"></div>
     <div class="prod-content">
         <h2>漆艺工具与材料</h2>
         <p>大漆创作全套工具和材料一站式供应，无论是漆画创作、漆器制作还是金缮修复，都能在这里配齐所需。</p>
@@ -190,7 +191,7 @@
 
 <!-- Product 5: Experience -->
 <div class="prod-block" id="experience">
-    <div class="prod-img">🏛️</div>
+    <div class="prod-img"><img src="images/lacquer-forest.jpg" alt="陕西安康漆林研学体验场景" loading="lazy" width="600" height="450"></div>
     <div class="prod-content">
         <h2>漆文化研学体验</h2>
         <p>位于陕西安康平利县的牛王生漆非遗展馆和漆艺体验基地，提供从割漆到制作漆器的全过程体验，适合个人爱好者、学校团体、企业团建。</p>
@@ -210,6 +211,7 @@
 
 <footer class="footer">
     <p>© 2016-2026 陕西龙头国漆文化产业有限公司 | <a href="index.html">龙头国漆官网</a> | 电话：13072913676</p>
+    <p style="margin-top:8px"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">陕ICP备2026005928号-1</a></p>
 </footer>
 
 </body>

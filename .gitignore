@@ -1,0 +1,21 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+
+# 不上传的交付内部文档（可选）
+# 如需保密内部交付文档，取消下面注释
+# 交付物-*.md
+# MAINTENANCE-GUIDE.md
+
+# 临时文件
+.tmp/
+*.tmp

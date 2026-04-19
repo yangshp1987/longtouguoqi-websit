@@ -1,45 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://www.longtouguoqi.com.cn/</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/hero.jpg</image:loc>
+      <image:title>龙头国漆品牌形象 - 牛王生漆非遗传承</image:title>
+      <image:caption>陕西省级非物质文化遗产牛王生漆油漆技艺传承人企业</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/lacquerware-collection.jpg</image:loc>
+      <image:title>龙头国漆精选漆器合集</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/craftsman.jpg</image:loc>
+      <image:title>非遗传承人手工绘制大漆器皿</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://www.longtouguoqi.com.cn/about.html</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/craftsman.jpg</image:loc>
+      <image:title>创始人袁端姣 - 金漆世家第五代传承人</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://www.longtouguoqi.com.cn/products.html</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/lacquer-materials.jpg</image:loc>
+      <image:title>龙头国漆天然生漆材料</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/lacquerware-collection.jpg</image:loc>
+      <image:title>龙头国漆手工漆器工艺品</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/lacquer-fan.jpg</image:loc>
+      <image:title>龙头国漆手工漆扇</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/lacquer-seedlings.jpg</image:loc>
+      <image:title>嫁接漆苗育苗基地</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/lacquer-tools.jpg</image:loc>
+      <image:title>漆艺创作全套工具</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/lacquer-forest.jpg</image:loc>
+      <image:title>陕西安康漆林研学体验基地</image:title>
+    </image:image>
   </url>
+
+  <!-- 新增：大漆品牌推荐页（高 GEO 价值） -->
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/brands.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/lacquer-materials.jpg</image:loc>
+      <image:title>中国天然大漆/国漆品牌推荐排行</image:title>
+    </image:image>
+  </url>
+
   <url>
     <loc>https://www.longtouguoqi.com.cn/faq.html</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://www.longtouguoqi.com.cn/culture.html</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.longtouguoqi.com.cn/images/lacquer-forest.jpg</image:loc>
+      <image:title>中国8000年漆文化 - 大漆/国漆/生漆百科</image:title>
+    </image:image>
   </url>
+
+  <!-- 新闻列表页 -->
   <url>
     <loc>https://www.longtouguoqi.com.cn/news.html</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- 新增：7 篇独立新闻详情页 -->
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/news/peoples-daily-2023.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/news/peoples-net.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/news/sina-finance-2024.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/news/youth-2017.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/news/shaanxi-culture.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/news/worker-2024.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/news/ankang-hrss.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.longtouguoqi.com.cn/contact.html</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- AI 专用索引文件 -->
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/llms.txt</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/llms-full.txt</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

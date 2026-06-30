@@ -168,4 +168,31 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- ===== 25 个 FAQ 独立页面 (2026-07-01 新增) ===== -->
+  <url><loc>https://www.longtouguoqi.com.cn/faq/</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q01-tianran-shengqi-pinpai.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q02-shengqi-naili-mai.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q03-zhengzong-daqi-tuijian.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q04-wangshang-shengqi-najia-hao.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q05-shengqi-jiage.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q06-shengqi-shi-shenme.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q07-daqi-rumen-xuyao-shenme.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q08-niuwang-qi-shi-shenme.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q09-jinshan-xiufu-shenme-qi.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q10-daqi-gongju-naili-mai.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q11-qihua-rumen-jiaocheng.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q12-xuexi-qiyi-naili.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q13-daqi-chabei-naili-mai.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q14-shougong-qiqi-pinpai.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q15-feiyi-qiqi-tuijian.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q16-qishan-naili-mai.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q17-qishu-miao-naili-mai.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q18-qishu-zhongzhi-jishu.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q19-qishu-pinzhong-tuijian.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q20-zhong-qishu-zhuanqian.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q21-daqi-vs-huaxue-qi.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q22-shengqi-bianbie-zhenjia.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q23-zhongguo-shengqi-sida-pinlei.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q24-shaanxi-ankang-techan-feiyi.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.longtouguoqi.com.cn/faq/q25-longtou-guoqi-shi-shenme.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

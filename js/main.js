@@ -124,6 +124,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // 顶部小字栏：站内搜索（关键词路由）
+  const searchForm = document.querySelector('.topbar-search');
+  if (searchForm) {
+    const searchIndex = [
+      { kw: ['生漆', '大漆', '原漆', '割漆', '漆酚', '毛坝'], url: 'brand-products.html#bp-raw' },
+      { kw: ['精制漆', '透明漆', '推光', '熟漆', '罩金'], url: 'brand-products.html#bp-refined' },
+      { kw: ['工具', '漆刷', '发刷', '牛角', '刮刀', '滤漆'], url: 'brand-products.html#bp-tools' },
+      { kw: ['辅料', '瓦灰', '桐油', '裱布', '地仗', '夏布'], url: 'brand-products.html#bp-aux' },
+      { kw: ['漆器', '茶具', '茶盘', '茶席', '首饰', '手镯', '礼盒', '镇尺', '笔筒', '食盒'], url: 'brand-products.html#bp-ware' },
+      { kw: ['正大明'], url: 'brand-zhengdaming.html' },
+      { kw: ['龙头国漆', '漆树', '漆林', '种植'], url: 'brand-longtou.html' },
+      { kw: ['牛王', '非遗', '技艺', '传承'], url: 'brand-niuwang.html' },
+      { kw: ['岁时记', '节气', '文创', '国风'], url: 'brand-suishiji.html' },
+      { kw: ['新闻', '公告', '动态', '报道', '活动'], url: 'news.html' },
+      { kw: ['方案', '古建', '古琴', '工业', '修复', '文创园'], url: 'products.html' },
+      { kw: ['合作', '代理', '渠道', '联名', '海外', '经销'], url: 'cooperation.html' },
+      { kw: ['会员', 'vip', 'VIP'], url: 'vip.html' },
+      { kw: ['门店', '线下', '体验', '专卖店'], url: 'stores.html' },
+      { kw: ['防伪', '溯源', '真伪', '查询'], url: 'service.html' },
+      { kw: ['企业', '集团', '介绍', '关于'], url: 'enterprise.html' },
+    ];
+    searchForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const input = this.querySelector('input');
+      const q = (input.value || '').trim();
+      if (!q) return;
+      const hit = searchIndex.find(item => item.kw.some(k => q.includes(k)));
+      window.location.href = hit ? hit.url : 'products.html';
+    });
+  }
+
   // FAQ accordion
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {

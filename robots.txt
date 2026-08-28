@@ -1,6 +1,6 @@
 # 龙头国漆官网 robots.txt
 # 允许所有搜索引擎与 AI 爬虫抓取
-# Last-Updated: 2026-04-19
+# Last-Updated: 2026-08-28
 
 # ===== 国际 AI 搜索引擎 =====
 User-agent: GPTBot
@@ -169,6 +169,3 @@ Allow: /
 # ===== 站点地图与 AI 索引 =====
 Sitemap: https://www.longtouguoqi.com.cn/sitemap.xml
 
-# AI 专用索引（llms.txt 约定）
-# https://www.longtouguoqi.com.cn/llms.txt
-# https://www.longtouguoqi.com.cn/llms-full.txt

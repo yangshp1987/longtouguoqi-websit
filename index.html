@@ -11,8 +11,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="has-topbar">
   <header class="header">
+    <!-- 顶部小字快捷导航栏（参考小米商城） -->
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <nav class="topbar-links" aria-label="产品快捷导航">
+          <a href="brand-products.html" class="topbar-highlight">正大明品牌产品</a>
+          <a href="brand-products.html#bp-raw">生漆</a>
+          <a href="brand-products.html#bp-refined">精制漆</a>
+          <a href="brand-products.html#bp-tools">工具</a>
+          <a href="brand-products.html#bp-aux">辅料</a>
+          <a href="brand-products.html#bp-ware">漆器</a>
+        </nav>
+        <div class="topbar-tools">
+          <form class="topbar-search" role="search">
+            <input type="text" id="topbarSearchInput" placeholder="搜索：生漆 / 漆器 / 工具…" aria-label="站内搜索">
+            <button type="submit" aria-label="搜索">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                <circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.35-4.35"></path>
+              </svg>
+            </button>
+          </form>
+          <a href="service.html#svc-online" class="topbar-cart" aria-label="购物车">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M6 6h15l-1.5 9h-12z"></path><path d="M6 6L5 3H2"></path>
+              <circle cx="9" cy="20" r="1.6"></circle><circle cx="19" cy="20" r="1.6"></circle>
+            </svg>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="container nav">
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="正大明">
@@ -70,15 +100,6 @@
             <a href="service.html#svc-anti">防伪查询说明</a>
             <a href="service.html#svc-online">线上销售网络</a>
             <a href="stores.html">线下门店</a>
-          </div>
-        </div>
-        <div class="nav-item">
-          <a href="brand-products.html" class="nav-link">正大明品牌产品</a>
-          <div class="dropdown">
-            <a href="brand-products.html#bp-ware">正大明漆器</a>
-            <a href="brand-products.html#bp-refined">正大明精制漆</a>
-            <a href="brand-products.html#bp-raw">正大明生漆</a>
-            <a href="brand-products.html#bp-tools">正大明工具</a>
           </div>
         </div>
       </nav>

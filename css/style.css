@@ -2033,3 +2033,9 @@ body.has-topbar .page-banner { margin-top: 118px; }
   font-style: italic;
   text-indent: 0;
 }
+
+/* 天猫在售商品色样行 */
+.sku-swatches { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; }
+.sku-swatches img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); background: var(--bg-warm); }
+.sku-swatches img:hover { transform: scale(1.15); border-color: var(--gold); }
+@media (max-width: 768px) { .sku-swatches img { width: 26px; height: 26px; } }

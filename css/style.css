@@ -1838,116 +1838,12 @@ body.bp-suishiji {
   .archive-grid { grid-template-columns: 1fr; }
 }
 
-/* ===== 顶部小字快捷导航栏（参考小米商城，仅首页） ===== */
-.topbar {
-  background: var(--bg-dark);
-  border-bottom: 1px solid rgba(201, 168, 92, 0.12);
-}
-.topbar-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 38px;
-}
-.topbar-links {
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.topbar-links::-webkit-scrollbar { display: none; }
-.topbar-links a {
-  display: block;
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.72);
-  padding: 0 14px;
-  line-height: 38px;
-  position: relative;
-  white-space: nowrap;
-}
-.topbar-links a + a::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 12px;
-  background: rgba(255, 255, 255, 0.15);
-}
-.topbar-links a:hover { color: var(--gold); }
-.topbar-links .topbar-highlight {
-  color: var(--gold);
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-.topbar-tools {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-shrink: 0;
-}
-.topbar-search {
-  display: flex;
-  align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 3px;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.06);
-  transition: border-color 0.25s ease;
-}
-.topbar-search:focus-within { border-color: var(--gold); }
-.topbar-search input {
-  width: 172px;
-  height: 26px;
-  border: none;
-  outline: none;
-  background: transparent;
-  color: var(--white);
-  font-size: 0.72rem;
-  padding: 0 10px;
-  font-family: inherit;
-}
-.topbar-search input::placeholder { color: rgba(255, 255, 255, 0.38); }
-.topbar-search button {
-  height: 26px;
-  padding: 0 9px;
-  border: none;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: color 0.25s ease;
-}
-.topbar-search button:hover { color: var(--gold); }
-.topbar-cart {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: rgba(255, 255, 255, 0.8);
-}
-.topbar-cart:hover { color: var(--gold); }
-.topbar-cart .cart-count {
-  min-width: 15px;
-  height: 15px;
-  border-radius: 8px;
-  background: var(--primary-light);
-  color: var(--white);
-  font-size: 0.62rem;
-  line-height: 15px;
-  text-align: center;
-  padding: 0 4px;
-  font-weight: 500;
-}
-
-/* 顶部栏出现时补偿固定头部总高度（80px 主栏 + 38px 顶栏） */
-body.has-topbar .hero { margin-top: 118px; }
+/* 固定主导航高度补偿（80px） */
+body .hero { margin-top: 80px; }
+body .page-banner { margin-top: 80px; }
 
 @media (max-width: 768px) {
-  body.has-topbar .nav-menu { top: 118px; }
-  .topbar-links a { padding: 0 9px; }
-  .topbar-search { display: none; }
+  .nav-menu { top: 80px; }
 }
 
 /* ===== 正大明品牌产品多级下拉（分类箭头 + 小类飞出菜单） ===== */
@@ -2017,8 +1913,6 @@ body.has-topbar .hero { margin-top: 118px; }
   .dropdown .submenu a { padding: 7px 12px; font-size: 0.82rem; }
 }
 
-/* ===== topbar 全站固定：子页 page-banner 高度补偿 ===== */
-body.has-topbar .page-banner { margin-top: 118px; }
 
 /* 门店描述行 */
 .store-desc {

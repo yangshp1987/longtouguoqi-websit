@@ -2039,3 +2039,28 @@ body.has-topbar .page-banner { margin-top: 118px; }
 .sku-swatches img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); background: var(--bg-warm); }
 .sku-swatches img:hover { transform: scale(1.15); border-color: var(--gold); }
 @media (max-width: 768px) { .sku-swatches img { width: 26px; height: 26px; } }
+
+/* ===== 品牌产品分类页 / 总览页 ===== */
+.bp-cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.bp-cat-grid .solution-card { min-height: 340px; }
+
+.cat-chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 4px; }
+.cat-chips a {
+  padding: 8px 20px;
+  border: 1px solid rgba(201,168,92,0.4);
+  border-radius: 999px;
+  font-size: 0.88rem;
+  letter-spacing: 1px;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--white);
+  transition: all 0.25s ease;
+}
+.cat-chips a:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-1px); }
+.cat-chips a.active { background: var(--primary); border-color: var(--primary); color: var(--white); }
+
+@media (max-width: 900px) { .bp-cat-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) {
+  .bp-cat-grid { grid-template-columns: 1fr; }
+  .cat-chips { justify-content: center; }
+}

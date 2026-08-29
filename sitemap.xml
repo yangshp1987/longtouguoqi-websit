@@ -37,6 +37,43 @@
     <priority>0.8</priority>
   </url>
 
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/brand-ware.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/brand-raw.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/brand-refined.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/brand-tools.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/brand-aux.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/brand-kit.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://www.longtouguoqi.com.cn/brand-products.html</loc>
     <changefreq>weekly</changefreq>

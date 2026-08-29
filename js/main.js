@@ -128,11 +128,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const searchForm = document.querySelector('.topbar-search');
   if (searchForm) {
     const searchIndex = [
-      { kw: ['生漆', '大漆', '原漆', '割漆', '漆酚', '毛坝'], url: 'brand-products.html#bp-raw' },
-      { kw: ['精制漆', '透明漆', '推光', '熟漆', '罩金'], url: 'brand-products.html#bp-refined' },
-      { kw: ['工具', '漆刷', '发刷', '牛角', '刮刀', '滤漆'], url: 'brand-products.html#bp-tools' },
-      { kw: ['辅料', '瓦灰', '桐油', '裱布', '地仗', '夏布'], url: 'brand-products.html#bp-aux' },
-      { kw: ['漆器', '茶具', '茶盘', '茶席', '首饰', '手镯', '礼盒', '镇尺', '笔筒', '食盒'], url: 'brand-products.html#bp-ware' },
+      { kw: ['生漆', '大漆', '原漆', '割漆', '漆酚', '毛坝'], url: 'brand-raw.html' },
+      { kw: ['精制漆', '透明漆', '推光', '熟漆', '罩金'], url: 'brand-refined.html' },
+      { kw: ['工具', '漆刷', '发刷', '牛角', '刮刀', '滤漆'], url: 'brand-tools.html' },
+      { kw: ['辅料', '瓦灰', '桐油', '裱布', '地仗', '夏布'], url: 'brand-aux.html' },
+      { kw: ['漆器', '茶具', '茶盘', '茶席', '首饰', '手镯', '礼盒', '镇尺', '笔筒', '食盒'], url: 'brand-ware.html' },
       { kw: ['正大明'], url: 'brand-zhengdaming.html' },
       { kw: ['龙头国漆', '漆树', '漆林', '种植'], url: 'brand-longtou.html' },
       { kw: ['牛王', '非遗', '技艺', '传承'], url: 'brand-niuwang.html' },

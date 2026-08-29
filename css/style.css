@@ -2016,3 +2016,6 @@ body.has-topbar .hero { margin-top: 118px; }
   }
   .dropdown .submenu a { padding: 7px 12px; font-size: 0.82rem; }
 }
+
+/* ===== topbar 全站固定：子页 page-banner 高度补偿 ===== */
+body.has-topbar .page-banner { margin-top: 118px; }

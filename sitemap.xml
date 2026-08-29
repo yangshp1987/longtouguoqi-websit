@@ -122,4 +122,34 @@
     <priority>0.7</priority>
   </url>
 
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/solution-nonheritage.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/solution-industry.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/solution-architecture.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/solution-guqin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.longtouguoqi.com.cn/solution-restoration.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

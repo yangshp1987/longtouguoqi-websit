@@ -1631,6 +1631,11 @@ a.brand-card {
 /* 品牌页 hero：略矮于首页，聚焦品牌 */
 .brand-hero { height: 78vh; min-height: 520px; max-height: 820px; }
 
+/* 品牌页轮播统一暖色调（增强一致性） */
+.brand-hero .hero-slide img {
+  filter: brightness(0.97) contrast(1.06) saturate(0.78) sepia(0.16) hue-rotate(-8deg);
+}
+
 /* 正大明：继承站点默认红金主题（庄重典雅） */
 
 /* 龙头国漆：墨绿山林主题（材料 · 产业） */

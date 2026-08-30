@@ -1842,13 +1842,151 @@ body.bp-suishiji {
   .archive-grid { grid-template-columns: 1fr; }
 }
 
-/* 固定主导航高度补偿（80px） */
-body .hero { margin-top: 80px; }
-body .page-banner { margin-top: 80px; }
+/* 固定头部高度补偿（顶栏 38px + 主导航 80px = 118px） */
+body .hero { margin-top: 118px; }
+body .page-banner { margin-top: 118px; }
 
 @media (max-width: 768px) {
+  body .hero, body .page-banner { margin-top: 80px; }
   .nav-menu { top: 80px; }
+  .topbar { display: none; }
 }
+
+/* ===== 顶栏：正大明品牌产品快捷入口 + 搜索 + 购物车（参考 mi.com） ===== */
+.topbar {
+  background: #17130f;
+  color: rgba(255,255,255,0.72);
+  font-size: 12px;
+  border-bottom: 1px solid rgba(201,168,92,0.12);
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 38px;
+  gap: 16px;
+}
+.topbar-links {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.topbar-links .tb-brand {
+  color: var(--gold);
+  font-weight: 600;
+  padding: 0 6px 0 0;
+  line-height: 38px;
+}
+.topbar-links .tb-group {
+  color: rgba(255,255,255,0.38);
+  margin: 0 4px 0 14px;
+}
+.topbar-links .tb-sep { color: rgba(255,255,255,0.18); margin: 0 8px; }
+.topbar-links a {
+  color: rgba(255,255,255,0.72);
+  padding: 0 5px;
+  line-height: 38px;
+  transition: color 0.2s ease;
+}
+.topbar-links a:hover { color: #fff; }
+.topbar-tools { display: flex; align-items: center; gap: 18px; }
+.topbar-search { display: flex; align-items: center; }
+.topbar-search input {
+  width: 180px;
+  height: 26px;
+  padding: 0 12px;
+  border: 1px solid rgba(255,255,255,0.22);
+  border-right: none;
+  border-radius: 13px 0 0 13px;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.topbar-search input::placeholder { color: rgba(255,255,255,0.38); }
+.topbar-search input:focus {
+  border-color: rgba(212,175,55,0.6);
+  background: rgba(255,255,255,0.13);
+}
+.topbar-search button {
+  width: 36px;
+  height: 26px;
+  border: none;
+  border-radius: 0 13px 13px 0;
+  background: var(--gold);
+  color: #17130f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+.topbar-search button:hover { filter: brightness(1.08); }
+.topbar-cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255,255,255,0.85);
+  cursor: pointer;
+  line-height: 38px;
+  user-select: none;
+}
+.topbar-cart:hover { color: #fff; }
+.cart-badge {
+  min-width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  padding: 0 4px;
+}
+.cart-mini {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 250px;
+  background: #fffdf9;
+  border: 1px solid rgba(201,168,92,0.25);
+  border-radius: 10px;
+  box-shadow: 0 18px 44px rgba(0,0,0,0.16);
+  padding: 20px 18px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+  z-index: 150;
+}
+.topbar-cart:hover .cart-mini,
+.topbar-cart.open .cart-mini {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.cart-mini p { font-size: 13px; color: #7a6f63; margin-bottom: 12px; }
+.cart-mini a {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--gold);
+  color: #17130f;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.cart-mini a:hover { filter: brightness(1.08); }
+
+/* 中屏：隐藏快捷链接，保留搜索与购物车 */
+@media (max-width: 1000px) {
+  .topbar-links { display: none; }
+  .topbar-inner { justify-content: flex-end; }
+}
+
 
 /* ===== 正大明品牌产品多级下拉（分类箭头 + 小类飞出菜单） ===== */
 .dropdown-mega { min-width: 198px; text-align: left; }

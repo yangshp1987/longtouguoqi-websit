@@ -201,3 +201,62 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(el);
   });
 });
+
+/* ===== 顶栏：站内搜索与购物车 ===== */
+(function () {
+  var form = document.getElementById('topbarSearch');
+  var input = document.getElementById('topbarSearchInput');
+  var ROUTES = [
+    ['漆材料', 'brand-products.html'],
+    ['漆器', 'brand-ware.html'],
+    ['器皿', 'ware-vessel.html'], ['茶器', 'ware-vessel.html'], ['餐具', 'ware-vessel.html'], ['文房', 'ware-vessel.html'],
+    ['花器', 'ware-flower.html'], ['花瓶', 'ware-flower.html'],
+    ['摆件', 'ware-ornament.html'], ['漆画', 'ware-ornament.html'],
+    ['收藏', 'ware-collection.html'], ['礼盒', 'ware-collection.html'],
+    ['生漆', 'brand-raw.html'], ['割漆', 'brand-raw.html'],
+    ['精制漆', 'brand-refined.html'], ['推光漆', 'brand-refined.html'], ['色漆', 'brand-refined.html'], ['揩清', 'brand-refined.html'],
+    ['工具', 'brand-tools.html'], ['漆刷', 'brand-tools.html'], ['莳绘', 'brand-tools.html'], ['戗金', 'brand-tools.html'],
+    ['辅料', 'brand-aux.html'], ['稀释', 'brand-aux.html'], ['箔', 'brand-aux.html'], ['木胎', 'brand-aux.html'],
+    ['材料包', 'brand-kit.html'], ['金缮', 'brand-kit.html'], ['犀皮', 'brand-kit.html'], ['螺钿', 'brand-kit.html'],
+    ['漂漆', 'brand-drift.html'], ['漆扇', 'brand-drift.html'],
+    ['非遗文创', 'solution-nonheritage.html'],
+    ['工业', 'solution-industry.html'], ['汽车', 'solution-industry.html'],
+    ['古建筑', 'solution-architecture.html'], ['建筑', 'solution-architecture.html'],
+    ['古琴', 'solution-guqin.html'], ['琴', 'solution-guqin.html'],
+    ['修缮', 'solution-restoration.html'], ['修复', 'solution-restoration.html'], ['金缮修复', 'solution-restoration.html'],
+    ['研学', 'cooperation.html#co-research'],
+    ['联名', 'cooperation.html#co-cobrand'],
+    ['代理', 'cooperation.html#co-channel'], ['加盟', 'cooperation.html#co-channel'],
+    ['合作', 'cooperation.html'],
+    ['新闻', 'news.html'], ['公告', 'news.html'],
+    ['门店', 'stores.html'], ['专柜', 'stores.html'],
+    ['会员', 'vip.html'], ['VIP', 'vip.html'],
+    ['防伪', 'service.html#svc-anti'], ['溯源', 'service.html#svc-trace'],
+    ['加入', 'join.html'], ['招聘', 'join.html'], ['岗位', 'join.html'],
+    ['正大明', 'brand-zhengdaming.html'],
+    ['龙头国漆', 'brand-longtou.html'], ['龙头', 'brand-longtou.html'],
+    ['牛王', 'brand-niuwang.html'],
+    ['岁时记', 'brand-suishiji.html'],
+    ['品牌', 'enterprise.html'], ['集团', 'enterprise.html']
+  ];
+  function searchGo() {
+    var kw = (input.value || '').trim();
+    if (!kw) { input.focus(); return; }
+    for (var i = 0; i < ROUTES.length; i++) {
+      if (kw.indexOf(ROUTES[i][0]) > -1) { window.location.href = ROUTES[i][1]; return; }
+    }
+    alert('未找到与「' + kw + '」相关的内容，可试试：漆器、生漆、工具、非遗文创、古琴…');
+  }
+  if (form) form.addEventListener('submit', function (e) { e.preventDefault(); searchGo(); });
+
+  var cart = document.getElementById('topbarCart');
+  if (cart) {
+    cart.addEventListener('click', function (e) {
+      if (e.target.closest && e.target.closest('.cart-mini')) return;
+      cart.classList.toggle('open');
+    });
+    document.addEventListener('click', function (e) {
+      if (cart !== e.target && !cart.contains(e.target)) cart.classList.remove('open');
+    });
+  }
+})();

@@ -2100,3 +2100,45 @@ body .page-banner { margin-top: 118px; }
   .bp-cat-grid { grid-template-columns: 1fr; }
   .cat-chips { justify-content: center; }
 }
+
+/* ===== 顶栏分类下拉：小类收进下拉框（漆器 / 漆材料） ===== */
+.topbar-links .tb-item { position: relative; display: flex; align-items: center; height: 38px; }
+.topbar-links .tb-cat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgba(255,255,255,0.78);
+  padding: 0 7px;
+  line-height: 38px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.topbar-links .tb-cat:hover { color: #fff; }
+.tb-caret { font-size: 9px; color: rgba(255,255,255,0.45); line-height: 1; transition: transform 0.2s ease; }
+.tb-item:hover .tb-caret { transform: rotate(180deg); }
+.topbar-links .tb-drop {
+  position: absolute;
+  top: 38px;
+  left: -10px;
+  min-width: 132px;
+  background: #fffdf9;
+  border: 1px solid rgba(201,168,92,0.25);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 18px 44px rgba(0,0,0,0.16);
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+  z-index: 160;
+}
+.tb-item:hover .tb-drop { opacity: 1; visibility: visible; transform: translateY(0); }
+.topbar-links .tb-drop a {
+  display: block;
+  line-height: 1.2;
+  padding: 9px 18px;
+  color: #5c5348;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.topbar-links .tb-drop a:hover { color: var(--primary); background: rgba(201,168,92,0.10); }

@@ -209,6 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var ROUTES = [
     ['漆材料', 'brand-products.html'],
     ['漆器', 'brand-ware.html'],
+    ['大师手作', 'master.html'], ['大师', 'master.html'], ['手作', 'master.html'], ['孤品', 'master.html'],
     ['器皿', 'ware-vessel.html'], ['茶器', 'ware-vessel.html'], ['餐具', 'ware-vessel.html'], ['文房', 'ware-vessel.html'],
     ['花器', 'ware-flower.html'], ['花瓶', 'ware-flower.html'],
     ['摆件', 'ware-ornament.html'], ['漆画', 'ware-ornament.html'],

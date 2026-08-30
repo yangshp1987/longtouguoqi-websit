@@ -1870,7 +1870,7 @@ body .page-banner { margin-top: 118px; }
   display: flex;
   align-items: center;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: visible;
 }
 .topbar-links .tb-brand {
   color: var(--gold);

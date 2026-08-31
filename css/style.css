@@ -269,7 +269,6 @@ ul, ol { list-style: none; }
 .hero-slide img {
   width: 100%; height: 100%;
   object-fit: cover;
-  filter: brightness(0.98) contrast(1.04) saturate(0.84) sepia(0.10) hue-rotate(-6deg);
 }
 
 .hero-overlay {
@@ -1631,11 +1630,7 @@ a.brand-card {
 /* 品牌页 hero：略矮于首页，聚焦品牌 */
 .brand-hero { height: 78vh; min-height: 520px; max-height: 820px; }
 
-/* 品牌页轮播统一暖色调（增强一致性） */
-.brand-hero .hero-slide img {
-  filter: brightness(0.97) contrast(1.06) saturate(0.78) sepia(0.16) hue-rotate(-8deg);
-}
-
+/* 品牌页轮播：原图直出，不做滤镜叠加 */
 /* 正大明：继承站点默认红金主题（庄重典雅） */
 
 /* 龙头国漆：墨绿山林主题（材料 · 产业） */

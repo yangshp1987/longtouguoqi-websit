@@ -261,3 +261,41 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 })();
+
+
+/* ===== 移动端增强（2026-09-19） ===== */
+(function () {
+  var MQ = window.matchMedia('(max-width: 768px)');
+
+  // 导航二级折叠：为含下拉的菜单项插入展开箭头
+  document.querySelectorAll('.nav-item').forEach(function (item) {
+    var dd = item.querySelector('.dropdown');
+    if (!dd) return;
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'nav-caret';
+    btn.setAttribute('aria-label', '展开子菜单');
+    btn.innerHTML = '<span class="caret">▾</span>';
+    item.appendChild(btn);
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      item.classList.toggle('open');
+    });
+  });
+
+  // 页脚手风琴：把每列链接收进可折叠容器
+  document.querySelectorAll('.footer-column').forEach(function (col) {
+    var h4 = col.querySelector('h4');
+    if (!h4) return;
+    var wrap = document.createElement('div');
+    wrap.className = 'footer-collapse';
+    Array.prototype.slice.call(col.children).forEach(function (node) {
+      if (node !== h4) wrap.appendChild(node);
+    });
+    col.appendChild(wrap);
+    h4.addEventListener('click', function () {
+      if (MQ.matches) col.classList.toggle('open');
+    });
+  });
+})();

@@ -512,6 +512,14 @@ ul, ol { list-style: none; }
   aspect-ratio: 4/3;
   object-fit: cover;
 }
+.intro-image.intro-video video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  background: #000;
+  border-radius: 4px;
+}
 
 /* Brand Cards */
 .brand-grid {
@@ -2142,3 +2150,77 @@ body .page-banner { margin-top: 118px; }
   white-space: nowrap;
 }
 .topbar-links .tb-drop a:hover { color: var(--primary); background: rgba(201,168,92,0.10); }
+
+
+/* ===== 移动端体验优化（2026-09-19） ===== */
+.nav-caret { display: none; }
+
+@media (max-width: 768px) {
+  /* 1. 首屏不再占满整屏 */
+  body .hero { height: 56vh; min-height: 400px; max-height: 520px; }
+  .hero-title { font-size: 1.9rem; margin-bottom: 12px; }
+  .hero-desc { font-size: 0.92rem; line-height: 1.75; margin-bottom: 22px; }
+  .hero-kicker { font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 10px; }
+  .hero-cta { padding: 12px 24px; font-size: 0.9rem; }
+  .hero-nav { bottom: 18px; }
+
+  /* 2. 导航二级折叠（点箭头展开） */
+  .nav-item { position: relative; width: 100%; }
+  .nav-item > .nav-link { padding-right: 46px; }
+  .nav-item .dropdown { display: none; }
+  .nav-item.open .dropdown { display: block; }
+  .nav-caret {
+    display: flex; align-items: center; justify-content: center;
+    position: absolute; top: 2px; right: 0;
+    width: 44px; height: 44px;
+    background: none; border: none; cursor: pointer;
+    color: var(--primary); font-size: 1rem; line-height: 1;
+  }
+  .nav-caret .caret { display: inline-block; transition: transform 0.25s ease; }
+  .nav-item.open .nav-caret .caret { transform: rotate(180deg); }
+
+  /* 3. 区块留白收紧 */
+  .section { padding: 52px 0; }
+  .section-header { margin-bottom: 34px; }
+  .section-desc { font-size: 0.92rem; }
+
+  /* 4. 内页 banner 变矮 */
+  body .page-banner { height: 200px; margin-top: 80px; }
+  .page-banner h1 { font-size: 1.5rem; }
+  .page-banner p { font-size: 0.85rem; }
+
+  /* 5. 数据条保持三列 */
+  .intro-stats { grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 22px; }
+  .stat-number { font-size: 1.35rem; }
+  .stat-label { font-size: 0.75rem; margin-top: 2px; }
+
+  /* 6. 页脚折叠为手风琴 */
+  .footer { padding: 40px 0 20px; }
+  .footer-grid { gap: 0; }
+  .footer-column { border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .footer-column h4 { position: relative; margin: 0; padding: 14px 0; cursor: pointer; }
+  .footer-column h4::after {
+    content: '+'; position: absolute; right: 0; top: 12px;
+    font-size: 1.1rem; color: rgba(255,255,255,0.6);
+  }
+  .footer-column.open h4::after { content: '\2212'; }
+  .footer-collapse { display: none; padding-bottom: 12px; }
+  .footer-column.open .footer-collapse { display: block; }
+  .footer-column a { display: block; padding: 7px 0; font-size: 0.9rem; }
+
+  /* 7. 标题与卡片字号降一档 */
+  h3 { font-size: 1.25rem; margin-bottom: 12px; }
+  .news-card .info { padding: 14px; }
+  .news-card .info h3,
+  .brand-card h3,
+  .solution-card h3,
+  .coop-card h3 { font-size: 1.1rem; }
+
+  /* 8. 品牌影片横向滑动 */
+  .video-grid {
+    display: flex; overflow-x: auto; gap: 12px;
+    scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
+  .video-player { flex: 0 0 78%; min-width: 78%; scroll-snap-align: start; }
+}

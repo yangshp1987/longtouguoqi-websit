@@ -55,6 +55,15 @@ document.addEventListener('DOMContentLoaded', function() {
       void desc.offsetWidth; // 强制重排，重放淡入动画
       desc.classList.add('hero-fade');
     }
+
+    // 按页切换按钮文字与链接（未设置 data-cta 的页恢复默认）
+    const cta = document.querySelector('.hero-cta');
+    if (cta) {
+      const txt = [...cta.childNodes].find(n => n.nodeType === 3 && n.textContent.trim());
+      if (!cta.dataset.defHref) { cta.dataset.defHref = cta.getAttribute('href'); cta.dataset.defText = txt ? txt.textContent.trim() : ''; }
+      if (txt) txt.textContent = '\n            ' + (slide.dataset.cta || cta.dataset.defText) + '\n            ';
+      cta.setAttribute('href', slide.dataset.ctaHref || cta.dataset.defHref);
+    }
   }
 
   function nextSlide() {

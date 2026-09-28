@@ -299,3 +299,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 })();
+
+/* ===== 语言切换器（2026-09-20） ===== */
+(function () {
+  var sw = document.querySelector('.lang-switch');
+  if (!sw) return;
+  var cur = sw.querySelector('.lang-cur');
+  cur.addEventListener('click', function (e) {
+    e.stopPropagation();
+    sw.classList.toggle('open');
+  });
+  document.addEventListener('click', function () { sw.classList.remove('open'); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') sw.classList.remove('open');
+  });
+})();

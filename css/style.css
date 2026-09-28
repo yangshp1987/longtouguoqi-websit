@@ -1,10 +1,10 @@
 /* 龙头国漆 企业官网样式 */
 
 :root {
-  --primary: #8B1A1A;
-  --primary-dark: #5C1010;
-  --primary-light: #B82E2E;
-  --gold: #C9A85C;
+  --primary: #8C2B1F;
+  --primary-dark: #6B1F16;
+  --primary-light: #A63A2C;
+  --gold: #C8A15A;
   --gold-light: #E8D5A0;
   --bg: #FDFBF7;
   --bg-warm: #F5F0E8;
@@ -2223,4 +2223,43 @@ body .page-banner { margin-top: 118px; }
     padding-bottom: 10px;
   }
   .video-player { flex: 0 0 78%; min-width: 78%; scroll-snap-align: start; }
+}
+
+/* 页脚背书语（品牌规范 v1.0） */
+.footer-endorsement {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  letter-spacing: 1px;
+  color: #C8A15A;
+}
+
+/* ===== 语言切换器（2026-09-20） ===== */
+.lang-switch { position: relative; margin-left: 12px; z-index: 60; }
+.lang-switch .lang-cur {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 12px; line-height: 1; padding: 7px 12px;
+  color: var(--text); background: transparent;
+  border: 1px solid rgba(140,43,31,0.35); border-radius: 15px;
+  cursor: pointer; white-space: nowrap; transition: all .2s ease;
+}
+.lang-switch .lang-cur:hover { color: #8C2B1F; border-color: #8C2B1F; }
+.lang-switch .lang-caret { font-size: 10px; opacity: .7; }
+.lang-switch .lang-drop {
+  position: absolute; top: calc(100% + 8px); right: 0; min-width: 116px;
+  background: #fffdf9; border: 1px solid rgba(201,168,92,0.28);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.14);
+  opacity: 0; visibility: hidden; transform: translateY(-4px);
+  transition: all .2s ease;
+}
+.lang-switch:hover .lang-drop,
+.lang-switch.open .lang-drop { opacity: 1; visibility: visible; transform: translateY(0); }
+.lang-switch .lang-drop a {
+  display: block; padding: 9px 15px; font-size: 12px;
+  color: #5c5348; white-space: nowrap;
+}
+.lang-switch .lang-drop a:hover { color: #8C2B1F; background: rgba(201,168,92,0.12); }
+@media (max-width: 768px) {
+  .lang-switch { margin-left: 6px; }
+  .lang-switch .lang-cur { font-size: 11px; padding: 6px 9px; }
+  .lang-switch .lang-drop { min-width: 104px; }
 }

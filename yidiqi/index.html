@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一滴漆 · 百里千刀 | 正大明集团</title>
+<meta name="description" content="一滴平利牛王漆的八千年旅程。亲手割漆、髹漆、推光，拓一把只属于你的漆扇。">
+<link rel="stylesheet" href="https://cdn.staticfile.net/lxgw-wenkai-webfont/1.7.0/lxgwwenkai-regular.css">
+<link rel="stylesheet" href="https://cdn.staticfile.net/lxgw-wenkai-webfont/1.7.0/lxgwwenkai-bold.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/></filter>
+  <filter id="rough2"><feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="3" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter>
+</svg>
+
+<div id="progress"></div>
+
+<!-- 序 -->
+<section id="intro" class="screen">
+  <div class="drop-fall"><span></span></div>
+  <div class="intro-text">
+    <p class="quote reveal">漆可用，故割之。</p>
+    <p class="quote-src reveal">—— 《庄子 · 人间世》</p>
+    <h1 class="reveal">一滴漆</h1>
+    <p class="sub reveal">它从秦岭深处一棵树的伤口里流出来，<br>然后，比我们所有人都活得更久。</p>
+  </div>
+  <div class="scroll-hint">向下滑动 · 开始旅程</div>
+</section>
+
+<!-- 1 割漆 -->
+<section id="cut" class="screen">
+  <div class="cut-frame sk"><canvas id="cutCanvas"></canvas></div>
+  <div class="cut-panel">
+    <p class="kicker">第一章 · 割漆</p>
+    <h2>凌晨三点，<br>漆农上山了。</h2>
+    <p>农历五月到八月，天不亮，平利牛王沟的漆农就背着漆刀进山。在漆树上划开一道 V 字口，下面插一片蚌壳，等树把“眼泪”流出来。</p>
+    <p class="try sk">现在轮到你：在左边的树皮上<b>用手指或鼠标划一刀</b>，然后等一等，看看会发生什么。</p>
+    <div class="cut-stats">
+      <div><em id="cutN">0</em><span>你割的刀数</span></div>
+      <div><em id="cutG">0</em><span>得漆（克）</span></div>
+      <div><em id="cutLeft">500</em><span>离一斤还差（克）</span></div>
+    </div>
+    <p class="note" id="cutNote">老话讲“百里千刀一斤漆”。一刀下去能流出十几克，可一棵漆树要长 8 年才能开割，割完一季还得休养。漆农天不亮进山，翻山越岭一棵一棵地割，这句老话就是这么来的。</p>
+  </div>
+</section>
+
+<!-- 2 变色 -->
+<section id="alive" class="tall">
+  <div class="sticky">
+    <div class="alive-wrap">
+      <svg id="bigDrop" viewBox="-10 0 220 290" aria-hidden="true">
+        <defs>
+          <radialGradient id="dropShine" cx="35%" cy="35%" r="60%">
+            <stop offset="0%" stop-color="#fff" stop-opacity=".8"/>
+            <stop offset="40%" stop-color="#fff" stop-opacity=".08"/>
+            <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <path id="dropBody" d="M100 10 C100 10 20 130 20 185 A80 80 0 0 0 180 185 C180 130 100 10 100 10Z" fill="#f2ebdc" filter="url(#rough2)"/>
+        <path d="M100 10 C100 10 20 130 20 185 A80 80 0 0 0 180 185 C180 130 100 10 100 10Z" fill="url(#dropShine)"/>
+        <path d="M100 10 C100 10 20 130 20 185 A80 80 0 0 0 180 185 C180 130 100 10 100 10Z" fill="none" stroke="#2b1e16" stroke-width="3" filter="url(#rough)"/>
+        <path d="M101 14 C101 14 24 132 23 186 A78 79 0 0 0 177 187 C178 132 99 16 99 16" fill="none" stroke="#2b1e16" stroke-width="1.4" opacity=".5" filter="url(#rough)"/>
+        <path d="M62 150 C52 170 50 190 56 205" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".6" filter="url(#rough)"/>
+      </svg>
+      <div class="alive-text">
+        <p class="kicker">第二章 · 它是活的</p>
+        <h2 id="aliveTitle">乳白</h2>
+        <p id="aliveDesc">刚流出的生漆像牛奶一样白。这时它还是“活的”：里面有漆酚，也有一种天然的酶，叫漆酶。</p>
+        <div class="alive-bar"><i id="aliveBar"></i></div>
+        <div class="alive-steps"><span>乳白</span><span>琥珀</span><span>栗褐</span><span>玄黑</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="wet" class="screen center">
+  <p class="kicker">一个反常识</p>
+  <h2 class="huge">世界上大多数漆需要<span class="dim strike">烘干</span>，<br>只有它，要在<span class="red mark">自然环境下阴干</span>。</h2>
+  <p class="lead">生漆不靠加热，也不靠水分蒸发，靠的是漆酶把漆酚“手拉手”连成立体的网。温度 20 到 30℃、湿度 70% 到 85%，漆酶才肯工作。所以匠人要把漆器放进专门的“荫房”，像养一个生命。</p>
+  <div class="chem">
+    <div class="chem-node sk">漆酚<small>Urushiol</small></div><b>+</b>
+    <div class="chem-node sk">漆酶<small>Laccase</small></div><b>+</b>
+    <div class="chem-node sk">水汽 · 氧<small>H₂O · O₂</small></div><b>→</b>
+    <div class="chem-node sk gold">三维网状高分子漆膜<small>耐水 · 耐酸 · 耐热 · 耐磨 · 绝缘</small></div>
+  </div>
+</section>
+
+<!-- 3 八千年 -->
+<section id="time" class="screen">
+  <div class="time-head">
+    <p class="kicker">第三章 · 八千年</p>
+    <h2>它见过的时间，比所有文字都长。</h2>
+    <p class="hint-inline">← 左右拖动时间轴 →</p>
+  </div>
+  <div class="timeline" id="timeline">
+    <div class="tl-card sk"><em>约 8000 年前</em><h3>跨湖桥漆弓</h3><p>浙江萧山出土，已知最早的漆器之一。那时还没有文字，中国人已经在用漆。</p></div>
+    <div class="tl-card sk"><em>约 7000 年前</em><h3>河姆渡朱漆木碗</h3><p>红色的漆，至今还能看出光泽。中国人对“朱与黑”的审美，从这里开始。</p></div>
+    <div class="tl-card sk"><em>约 2400 年前</em><h3>曾侯乙墓漆棺</h3><p>两千多年地下，漆皮仍有光泽。</p></div>
+    <div class="tl-card sk"><em>约 2100 年前</em><h3>马王堆漆器</h3><p>出土时光亮如新。木头早已脆弱，保护它的，是那层漆。</p></div>
+    <div class="tl-card sk"><em>《韩非子》</em><h3>“禹作为祭器，墨染其外，而朱画其内”</h3><p>外黑内红，是中国最古老的礼器配色。</p></div>
+    <div class="tl-card sk red"><em>明 · 《本草纲目》</em><h3>“以金州者为佳，故世称金漆”</h3><p>金州，就是今天的陕西安康。平利牛王漆，明清时成为贡漆。</p></div>
+    <div class="tl-card sk red"><em>1925</em><h3>正大明商号创立</h3><p>袁永龄在秦巴漆乡创号，漆桶上画牛头，是为“牛王漆”。</p></div>
+    <div class="tl-card sk red"><em>1931</em><h3>经上海港远销日本</h3><p>平利大漆顺汉江、下汉口、出上海，漂洋过海。1976 年广交会，仍有日本商人点名要“平利牛王牌”。</p></div>
+    <div class="tl-card sk red"><em>1934</em><h3>研制精制彩色漆</h3><p>从卖原料到做深加工的关键一跃。</p></div>
+    <div class="tl-card sk red"><em>2016 — 2021</em><h3>百年漆脉，归来</h3><p>第五代传人袁端姣从西安交大硕士毕业回乡，重建漆林。牛王生漆油漆技艺列入陕西省级非遗。</p></div>
+    <div class="tl-card sk red"><em>2025</em><h3>大漆眼镜获德国 iF 设计奖</h3><p>八千年的材料，戴在了当代人的脸上。</p></div>
+  </div>
+</section>
+
+<!-- 4 时间对照 -->
+<section id="vs" class="screen">
+  <p class="kicker">第四章 · 拖动时间</p>
+  <h2>同一张案几，刷两种漆，放进时间里。</h2>
+  <div class="vs-wrap">
+    <div class="vs-panel"><canvas id="vsA" width="600" height="420"></canvas><p>普通化学涂料</p></div>
+    <div class="vs-panel"><canvas id="vsB" width="600" height="420"></canvas><p>天然大漆</p></div>
+  </div>
+  <div class="vs-control">
+    <input type="range" id="vsRange" min="0" max="2200" value="0" step="1">
+    <div class="vs-year"><em id="vsYear">0</em> 年后</div>
+    <p id="vsCap" class="vs-cap">两张案几，一样漂亮。</p>
+    <p class="note small">示意动画，基于材料特性与出土文物，非实验数据。</p>
+  </div>
+</section>
+
+<!-- 5 髹漆 -->
+<section id="layers" class="tall xl">
+  <div class="sticky">
+    <div class="layers-wrap">
+      <div class="layers-text">
+        <p class="kicker">第五章 · 一件漆器的诞生</p>
+        <h2 id="lyStage">制胎</h2>
+        <p id="lyDesc">先用木头、竹子或者麻布做出器物的“骨头”，叫作胎。</p>
+        <div class="ly-count"><div><em id="lyN">0</em><span>髹漆道数</span></div><div><em id="lyD">0</em><span>经历天数</span></div></div>
+      </div>
+      <canvas id="layerCanvas" width="900" height="900"></canvas>
+    </div>
+  </div>
+</section>
+
+<section id="polish" class="screen center">
+  <p class="kicker">最后一道工序 · 推光</p>
+  <h2>匠人用手掌，推它上千遍。<br><span class="dim">现在，用你的手。</span></h2>
+  <div class="mirror-wrap">
+    <div class="mirror-frame sk">
+      <div class="mirror" id="mirror">
+        <div class="mirror-reflect">以 漆 为 镜</div>
+        <div class="mirror-light" id="mirrorLight"></div>
+        <canvas id="polishCanvas"></canvas>
+      </div>
+    </div>
+    <div class="polish-meter"><i id="polishBar"></i></div>
+    <p id="polishTip" class="try sk">在漆面上来回擦动，把哑光的漆面推亮</p>
+  </div>
+</section>
+
+<!-- 6 百业 -->
+<section id="uses" class="screen">
+  <p class="kicker">第六章 · 大漆能做什么</p>
+  <h2>从紫禁城的梁柱，到你手腕上的镯子。</h2>
+  <div class="uses-grid">
+    <figure class="sk" style="--img:url(../images/solutions/sol-architecture.jpg)"><figcaption><h3>古建修缮</h3><p>地仗、批灰、裱麻、髹涂，还原真正的大漆建筑</p></figcaption></figure>
+    <figure class="sk" style="--img:url(../images/solutions/sol-guqin.jpg)"><figcaption><h3>古琴</h3><p>好琴的声音，一半在木，一半在漆</p></figcaption></figure>
+    <figure class="sk" style="--img:url(../images/brands/zd-3.jpg)"><figcaption><h3>茶器 · 礼器</h3><p>朱黑相映，越用越亮</p></figcaption></figure>
+    <figure class="sk" style="--img:url(../images/brands/zd-2.jpg)"><figcaption><h3>描金 · 非遗</h3><p>牛王国漆，省级非遗髹漆技艺</p></figcaption></figure>
+    <figure class="sk" style="--img:url(../images/brands/ssj-2.jpg)"><figcaption><h3>首饰 · 岁时记</h3><p>二十四节气，戴在身上的东方</p></figcaption></figure>
+    <figure class="sk" style="--img:url(../images/hero-5.jpg)"><figcaption><h3>工业与科研</h3><p>漆酚高分子材料，耐腐蚀、附着力强，走向船舶、管道与更多领域</p></figcaption></figure>
+  </div>
+</section>
+
+<!-- 7 实力 -->
+<section id="proof" class="screen">
+  <div class="proof-bg"></div>
+  <p class="kicker">第七章 · 谁在守着这滴漆</p>
+  <h2 class="group-name">正大明集团<i class="seal">百年<br>商号</i></h2>
+  <p class="lead">从一棵漆树，到一件器物，全链路自己做。<br>市面上的同行，大多只做原料、只做器物、或者只做首饰。</p>
+  <div class="chain">
+    <span class="sk">漆树种植</span><i></i><span class="sk">生漆采割</span><i></i><span class="sk">精制加工</span><i></i><span class="sk">非遗漆器</span><i></i><span class="sk">大漆首饰</span>
+  </div>
+  <div class="nums">
+    <div><em data-to="1925">0</em><span>正大明商号创立</span></div>
+    <div><em data-to="5000" data-suf="+">0</em><span>亩漆树基地</span></div>
+    <div><em data-to="40" data-suf="万+">0</em><span>株漆树</span></div>
+    <div><em data-to="18" data-suf="%">0</em><span>全国生漆精制品市场份额</span></div>
+    <div><em data-to="1000" data-suf="+">0</em><span>吨年产生漆精制品</span></div>
+    <div><em data-to="600" data-suf="+">0</em><span>带动周边群众就业</span></div>
+  </div>
+  <div class="honors">
+    <p>陕西省级非遗 · 牛王生漆油漆技艺代表性传承人企业</p>
+    <p>参与制定行业标准 GH/T 1299-2020《漆树造林技术规程》、GH/T 1300-2020《漆树病虫害防治技术规范》</p>
+    <p>2025 德国 iF 设计奖 · 中国工艺美术百鹤奖新锐奖 · 陕西省“传世珍品” · 中国乡村工匠名师</p>
+    <p>科研合作：中国科学院 · 清华大学 · 西北农林科技大学 · 西安生漆研究所</p>
+  </div>
+  <div class="brands">
+    <div class="sk"><b>正大明</b><span>集团旗舰 · 精制漆与高端漆器</span></div>
+    <div class="sk"><b>龙头国漆</b><span>全产业链材料 · 古建与工坊原料</span></div>
+    <div class="sk"><b>牛王国漆</b><span>非遗文化 · 政务礼赠与典藏</span></div>
+    <div class="sk"><b>岁时记</b><span>节气美学 · 大漆首饰与文创</span></div>
+  </div>
+</section>
+
+<!-- 终章 拓扇留名 -->
+<section id="fan" class="screen">
+  <p class="kicker">终章 · 拓扇留名</p>
+  <h2>把大漆滴进水里，它不会化开，<br>它会<span class="red mark">浮在水面上开花</span>。</h2>
+  <p class="lead left">这是天然大漆独有的“浮性”。画一盆水，拓一把只属于你的漆扇，再落上你的名字，让它和漆一样，活两千年。</p>
+  <div class="fan-wrap">
+    <div class="fan-stage">
+      <canvas id="marble"></canvas>
+      <div class="palette" id="palette"></div>
+    </div>
+    <div class="fan-side">
+      <p class="try sk">一、<b>点一下</b>水面：滴一滴彩漆<br>二、<b>按住拖动</b>：用漆针划出花纹<br>三、写下名字，点“拓扇落款”</p>
+      <input id="nameIn" maxlength="6" placeholder="你的名字" value="">
+      <input id="wishIn" maxlength="14" placeholder="一句话（可不填）" value="">
+      <div class="btns"><button id="btnFan" class="btn gold">拓扇落款</button><button id="btnClear" class="btn ghost sk">换一盆水</button></div>
+      <canvas id="card" width="1080" height="1350"></canvas>
+      <div class="btns"><button id="btnSave" class="btn ghost sk">保存图片</button></div>
+      <p class="note">每一把漆扇的花纹，世界上只有一把。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="../images/logo.png" alt="正大明集团" class="flogo">
+  <p class="motto">正于心 · 明于器</p>
+  <p>正大明集团 · 陕西安康平利 · 中国漆树之乡</p>
+  <p class="small">官网 <a href="https://www.longtouguoqi.com.cn" target="_blank">longtouguoqi.com.cn</a></p>
+</footer>
+
+<script src="app.js"></script>
+<script src="marble.js"></script>
+</body>
+</html>

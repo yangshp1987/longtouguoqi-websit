@@ -129,6 +129,10 @@ section+section::before{content:"";position:absolute;top:0;left:12vw;right:12vw;
 
 /* uses */
 .uses-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:3vh}
+.uses-map{display:block;margin:3vh auto 0;max-width:1320px;padding:12px;background:#fbf5e8;box-shadow:6px 8px 0 rgba(43,30,22,.15);transform:rotate(-.3deg);transition:transform .3s}
+.uses-map:hover{transform:rotate(0) scale(1.005)}
+.uses-map img{display:block;width:100%;height:auto;border-radius:4px}
+.center-note{text-align:center}
 .uses-grid figure{position:relative;aspect-ratio:4/3.2;background:var(--img) center/cover;overflow:hidden;box-shadow:5px 6px 0 rgba(43,30,22,.15);filter:sepia(.18) saturate(.92)}
 .uses-grid figure:nth-child(3n+1){transform:rotate(-.6deg)}.uses-grid figure:nth-child(3n+2){transform:rotate(.5deg)}
 .uses-grid figure::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(20,12,8,.85))}

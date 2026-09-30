@@ -1200,6 +1200,10 @@ a.brand-card {
   .nav-menu {
     position: fixed;
     top: 80px; left: 0; right: 0;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     background: var(--bg);
     flex-direction: column;
     padding: 20px;
@@ -2262,4 +2266,56 @@ body .page-banner { margin-top: 118px; }
   .lang-switch { margin-left: 6px; }
   .lang-switch .lang-cur { font-size: 11px; padding: 6px 9px; }
   .lang-switch .lang-drop { min-width: 104px; }
+}
+
+/* ===== 个人名片页与入口卡片（2026-09-29） ===== */
+.person-cards-section { background: #fbf9f4; }
+.person-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.person-card {
+  display: flex; flex-direction: column; align-items: center;
+  background: #fff;
+  border: 1px solid rgba(201,168,92,0.22);
+  border-radius: 18px;
+  padding: 32px 24px;
+  text-align: center;
+  color: var(--text);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.person-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(140,43,31,0.10);
+  border-color: rgba(140,43,31,0.25);
+}
+.person-avatar-mini {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--primary); color: var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; font-weight: 700;
+  font-family: 'Noto Serif SC', serif;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 18px rgba(140,43,31,0.18);
+}
+.person-card h3 { font-size: 1.35rem; margin-bottom: 4px; font-weight: 700; }
+.person-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 18px; }
+.person-card .link {
+  display: inline-block;
+  font-size: 0.85rem; color: var(--primary); font-weight: 600;
+  border-bottom: 1px dashed rgba(140,43,31,0.25);
+}
+@media (max-width: 560px) {
+  .person-cards { grid-template-columns: 1fr; gap: 16px; }
+  .person-card { padding: 26px 20px; }
+}
+.person-tags {
+  color: var(--gold-dark, #8c7339);
+  font-size: 0.8rem;
+  line-height: 1.55;
+  margin: -10px 0 18px;
 }

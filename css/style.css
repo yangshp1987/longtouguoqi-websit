@@ -2319,3 +2319,31 @@ body .page-banner { margin-top: 118px; }
   line-height: 1.55;
   margin: -10px 0 18px;
 }
+
+/* ===== 个人名片聚合页（高端深色版 2026-09-30） ===== */
+.person-cards-section--dark {
+  background: linear-gradient(135deg, #2a0a07 0%, #1c100c 100%);
+}
+.person-cards-section--dark .section-title { color: #FDF3E3; }
+.person-cards-section--dark .section-desc { color: rgba(253,243,227,0.55); }
+.person-card--dark {
+  background: linear-gradient(145deg, #5a1a14 0%, #3d0f0b 100%);
+  border-color: rgba(240,201,122,0.35);
+  color: #FDF3E3;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.3);
+}
+.person-card--dark:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 55px rgba(0,0,0,0.45);
+  border-color: rgba(240,201,122,0.55);
+}
+.person-card--dark .person-avatar-mini {
+  background: transparent;
+  color: #F0C97A;
+  border: 1px solid rgba(240,201,122,0.5);
+  box-shadow: none;
+}
+.person-card--dark h3 { color: #FDF3E3; }
+.person-card--dark p { color: rgba(253,243,227,0.7); }
+.person-card--dark .link { color: #F0C97A; border-bottom-color: rgba(240,201,122,0.35); }
+.cards-landing .page-banner img { filter: brightness(0.55); }

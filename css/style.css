@@ -2301,7 +2301,9 @@ body .page-banner { margin-top: 118px; }
   font-family: 'Noto Serif SC', serif;
   margin-bottom: 16px;
   box-shadow: 0 6px 18px rgba(140,43,31,0.18);
+  overflow: hidden;
 }
+.person-avatar-mini img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .person-card h3 { font-size: 1.35rem; margin-bottom: 4px; font-weight: 700; }
 .person-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 18px; }
 .person-card .link {

@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#3d0f0b">
-  <meta name="description" content="袁端姣｜陕西龙头国漆文化产业有限公司创始人 / 总经理。陕西省工艺美术大师。别人是把漆做成器，我们是从种漆树开始做漆。">
-  <title>袁端姣｜陕西龙头国漆文化产业有限公司 创始人 / 总经理</title>
+  <meta name="description" content="袁端姣｜正大明 创始人 / 总经理。陕西省工艺美术大师。从种漆树开始，做一条完整的中国漆路。">
+  <title>袁端姣｜正大明 创始人 / 总经理</title>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="正大明">
-  <meta property="og:title" content="袁端姣｜陕西龙头国漆文化产业有限公司 创始人 / 总经理">
-  <meta property="og:description" content="别人是把漆做成器，我们是从种漆树开始做漆。">
+  <meta property="og:title" content="袁端姣｜正大明 创始人 / 总经理">
+  <meta property="og:description" content="从种漆树开始，做一条完整的中国漆路。">
   <meta property="og:url" content="https://www.longtouguoqi.com.cn/card-yuan-duanjiao.html">
   <meta property="og:image" content="https://www.longtouguoqi.com.cn/images/card-yuan-duanjiao-share.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="袁端姣｜陕西龙头国漆文化产业有限公司 创始人 / 总经理">
-  <meta name="twitter:description" content="别人是把漆做成器，我们是从种漆树开始做漆。">
+  <meta name="twitter:title" content="袁端姣｜正大明 创始人 / 总经理">
+  <meta name="twitter:description" content="从种漆树开始，做一条完整的中国漆路。">
   <meta name="twitter:image" content="https://www.longtouguoqi.com.cn/images/card-yuan-duanjiao-share.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,13 +46,14 @@
 .card-brandbar .slogan { font-size: 11px; color: rgba(240,201,122,0.7); letter-spacing: 2px; }
 .card-hero { padding: 30px 26px 26px; text-align: center; }
 .card-avatar {
-  width: 108px; height: 108px; margin: 0 auto 18px; border-radius: 50%;
-  border: 1.5px solid rgba(240,201,122,0.75);
+  width: 168px; height: 168px; margin: 0 auto 20px; border-radius: 50%;
+  border: 2px solid rgba(240,201,122,0.8);
   background: radial-gradient(circle at 50% 35%, #7a231a 0%, #4a1410 100%);
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Noto Serif SC', serif; font-size: 38px; font-weight: 700;
-  color: #F0C97A; letter-spacing: 3px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
+.card-avatar-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .card-sheet h1 { font-family: 'Noto Serif SC', serif; font-size: 1.95rem; font-weight: 700; color: #FDF3E3; letter-spacing: 6px; margin-bottom: 8px; }
 .card-role { color: #F0C97A; font-size: 1.02rem; font-weight: 600; margin-bottom: 4px; letter-spacing: 1px; }
 .card-org { color: rgba(253,243,227,0.72); font-size: 0.84rem; margin-bottom: 2px; }
@@ -86,9 +87,16 @@
 .card-flow span { font-size: 0.8rem; color: #FDF3E3; background: rgba(240,201,122,0.10); border: 1px solid rgba(240,201,122,0.25); border-radius: 6px; padding: 6px 10px; }
 .card-flow i { font-style: normal; color: rgba(240,201,122,0.75); font-size: 0.8rem; }
 .card-brands { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
-.card-brand { background: rgba(0,0,0,0.2); border: 1px solid rgba(240,201,122,0.2); border-radius: 10px; padding: 12px 14px; }
+.card-brand {
+  position: relative; display: block; text-decoration: none;
+  background: rgba(0,0,0,0.2); border: 1px solid rgba(240,201,122,0.2);
+  border-radius: 10px; padding: 12px 30px 12px 14px;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+a.card-brand:hover { background: rgba(0,0,0,0.34); border-color: rgba(240,201,122,0.55); transform: translateY(-2px); }
 .card-brand b { display: block; font-family: 'Noto Serif SC', serif; font-size: 0.92rem; color: #F0C97A; font-weight: 700; margin-bottom: 4px; letter-spacing: 1px; }
 .card-brand em { font-style: normal; font-size: 0.76rem; color: rgba(253,243,227,0.7); line-height: 1.6; }
+.card-brand i { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-style: normal; font-size: 0.9rem; color: rgba(240,201,122,0.75); }
 .card-stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; padding: 6px 26px 0; }
 .card-stat { background: rgba(0,0,0,0.22); border: 1px solid rgba(240,201,122,0.18); border-radius: 10px; padding: 14px 6px; text-align: center; }
 .card-stat b { display: block; font-family: 'Noto Serif SC', serif; font-size: 1.35rem; color: #F0C97A; font-weight: 700; }
@@ -115,7 +123,7 @@
 @media (max-width: 480px) {
   .card-main { padding: 4px 12px 48px; }
   .card-sheet h1 { font-size: 1.7rem; letter-spacing: 4px; }
-  .card-avatar { width: 92px; height: 92px; font-size: 32px; }
+  .card-avatar { width: 138px; height: 138px; }
   .card-brands { grid-template-columns: 1fr; }
   .card-stats { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; }
   .card-stat b { font-size: 1.15rem; }
@@ -140,21 +148,20 @@
         <div class="card-avatar"><img src="images/card-yuan-duanjiao-avatar.jpg" alt="袁端姣" class="card-avatar-img"></div>
         <h1>袁端姣</h1>
         <p class="card-role">创始人 / 总经理</p>
-        <p class="card-org">陕西龙头国漆文化产业有限公司</p>
-        <p class="card-org-sub">正大明文化产业集团 · 规上企业</p>
+        
+        <p class="card-org-sub">西安交通大学艺术设计硕士</p>
         <div class="card-chiprow"><span>陕西省工艺美术大师</span>
+          <span>中国乡村工匠名师</span>
           <span>省级髹漆技艺非遗传承人</span>
-          <span>高级工艺美术品设计师</span>
-          <span>陕西省乡村工匠名师</span>
-          <span>中国乡村工匠名师</span></div>
+          <span>高级工艺美术品设计师</span></div>
       </div>
 
-      <blockquote class="card-quote">别人是把漆做成器，我们是从种漆树开始做漆。</blockquote>
+      <blockquote class="card-quote">从种漆树开始，做一条完整的中国漆路。</blockquote>
 
             <section class="card-block">
         <h2>个人简介</h2>
-        <p>袁端姣，西安交通大学艺术设计硕士，2014 年毕业后返乡创业，回到秦巴山区的家乡陕西安康平利，接续正大明自 1925 年起的百年漆行血脉，创办陕西龙头国漆文化产业有限公司并任总经理。</p>
-        <p>她以天然生漆为核心、以非遗技艺为灵魂、以东方生活美学为方向，从种漆树做起，先后建立牛王生漆漆树种植基地、平利县牛王生漆研究所、牛王生漆博物馆与西安漆器展厅，并创办西安漆器汉唐文化产业有限公司，让一门古老手艺长成一条完整的产业。</p>
+        <p>袁端姣，西安交通大学艺术设计硕士，出身陕西安康平利漆业世家，接续正大明自 1925 年起的百年漆行血脉。2014 年硕士毕业后返乡创业，从种漆树做起，把一门古老手艺做成一条完整的产业。</p>
+        <p>她深耕秦巴髹漆十余年，建立牛王生漆漆树种植基地、平利县牛王生漆研究所、牛王生漆博物馆与西安漆器展厅；参与制定两项漆树行业标准，作品获德国 iF 设计奖、中国工艺美术百鹤奖等国内外奖项。</p>
       </section>
 
       <section class="card-block">
@@ -176,10 +183,10 @@
       <section class="card-block">
         <h2>四大品牌</h2>
         <div class="card-brands">
-          <div class="card-brand"><b>正大明漆</b><em>高端漆器与大师手作</em></div>
-          <div class="card-brand"><b>龙头国漆</b><em>生漆与漆材料全产业链</em></div>
-          <div class="card-brand"><b>牛王国漆</b><em>非遗文化与礼赠</em></div>
-          <div class="card-brand"><b>岁时记</b><em>东方生活美学文创</em></div>
+          <a class="card-brand" href="brand-zhengdaming.html"><b>正大明漆</b><em>高端漆器与大师手作</em><i>→</i></a>
+          <a class="card-brand" href="brand-longtou.html"><b>龙头国漆</b><em>生漆与漆材料全产业链</em><i>→</i></a>
+          <a class="card-brand" href="brand-niuwang.html"><b>牛王国漆</b><em>非遗文化与礼赠</em><i>→</i></a>
+          <a class="card-brand" href="brand-suishiji.html"><b>岁时记</b><em>东方生活美学文创</em><i>→</i></a>
         </div>
         <p class="card-note">覆盖「材料—器物—生活」全场景，合作伙伴遍布全球。</p>
       </section>
@@ -193,14 +200,14 @@
       <section class="card-block">
         <h2>关键经历</h2>
         <ul class="card-timeline">
-          <li><span class="yr">2014</span><span class="ev">西安交通大学硕士毕业，返乡创办陕西龙头国漆文化产业有限公司，任总经理</span></li>
+          <li><span class="yr">2014</span><span class="ev">西安交通大学硕士毕业，返乡创业，接续正大明百年漆行血脉</span></li>
           <li><span class="yr">2017</span><span class="ev">建立牛王生漆漆树种植基地，辐射面积约 5000 亩</span></li>
           <li><span class="yr">2019</span><span class="ev">创立平利县牛王生漆研究所并任所长；同年被评为安康市牛王生漆髹漆技艺非遗传承人</span></li>
           <li><span class="yr">2021</span><span class="ev">被评为陕西省牛王生漆髹漆技艺非遗传承人；安康市「金州工匠」</span></li>
           <li><span class="yr">2022</span><span class="ev">创办西安漆器汉唐文化产业有限公司，任总经理</span></li>
           <li><span class="yr">2023</span><span class="ev">创办牛王生漆博物馆、西安漆器展厅；被评为陕西省工艺美术大师；个人工作室获「陕西省省级非遗工坊」</span></li>
-          <li><span class="yr">2024</span><span class="ev">获陕西省乡村工匠名师称号</span></li>
-          <li><span class="yr">2025</span><span class="ev">获中国乡村工匠名师称号</span></li>
+          <li><span class="yr">2024</span><span class="ev">获中国乡村工匠名师称号</span></li>
+          <li><span class="yr">2025</span><span class="ev">作品获德国 iF 设计奖；获陕西省乡村工匠名师称号</span></li>
         </ul>
       </section>
 
@@ -217,14 +224,14 @@
       <section class="card-block">
         <h2>代表作品与奖项</h2>
         <ul class="card-list">
+          <li>《Magic O2O 模块化眼镜》获德国 iF 设计奖</li>
+          <li>《云起见龙骧》获中国工艺美术百鹤奖新锐奖</li>
           <li>《汉唐》获第十九届中国（深圳）国际文化产业博览交易会金奖</li>
+          <li>「闭月羞花」系列获中华非物质文化遗产传承人薪传奖优秀奖</li>
           <li>《霞光》获陕西省工艺美术精品汇报展金奖</li>
           <li>《梦幻》获陕西省「传世珍品」称号</li>
-          <li>《云起见龙骧》获中国工艺美术百鹤奖新锐奖</li>
-          <li>《Magic O2O 模块化眼镜》获德国 iF 设计奖</li>
-          <li>《新生》被安康市博物馆收藏；《晨钟暮鼓》系列茶盘被安康市群艺馆收藏</li>
-          <li>「闭月羞花」系列获中华非物质文化遗产传承人薪传奖优秀奖</li>
           <li>「骊山杯」漆艺文创设计大赛一等奖</li>
+          <li>《新生》被安康市博物馆收藏；《晨钟暮鼓》系列茶盘被安康市群艺馆收藏</li>
         </ul>
       </section>
 
@@ -234,9 +241,6 @@
           <span>彩色漆绘制</span>
           <span>变涂</span>
           <span>描金</span>
-          <span>起纹</span>
-          <span>堆漆</span>
-          <span>螺钿</span>
           <span>漂漆水影画</span>
         </div>
       </section>
@@ -244,9 +248,8 @@
       <section class="card-block">
         <h2>联系方式</h2>
         <ul class="card-info">
-          <li><label>公司</label><span>陕西龙头国漆文化产业有限公司</span></li>
           <li><label>电话</label><a href="tel:15691979501">156-9197-9501</a></li>
-          <li><label>地址</label><span>陕西省西安市</span></li>
+          <li><label>地址</label><span>陕西省西安市高新区唐延路银河新坐标A座1707</span></li>
           <li><label>官网</label><a href="https://www.longtouguoqi.com.cn">longtouguoqi.com.cn</a></li>
         </ul>
         <div class="card-actions">

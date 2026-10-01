@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#3d0f0b">
-  <meta name="description" content="杨世鑫｜陕西龙头国漆文化产业有限公司董事长。清华大学工商管理硕士。以产业化的方式守护手艺，以市场化的语言讲述传统。">
-  <title>杨世鑫｜陕西龙头国漆文化产业有限公司 董事长</title>
+  <meta name="description" content="杨世鑫｜正大明 董事长。清华大学工商管理硕士。以产业化的方式守护手艺，以市场化的语言讲述传统。">
+  <title>杨世鑫｜正大明 董事长</title>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="正大明">
-  <meta property="og:title" content="杨世鑫｜陕西龙头国漆文化产业有限公司 董事长">
+  <meta property="og:title" content="杨世鑫｜正大明 董事长">
   <meta property="og:description" content="以产业化的方式守护手艺，以市场化的语言讲述传统。">
   <meta property="og:url" content="https://www.longtouguoqi.com.cn/card-yang-shixin.html">
   <meta property="og:image" content="https://www.longtouguoqi.com.cn/images/card-yang-shixin-share.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="杨世鑫｜陕西龙头国漆文化产业有限公司 董事长">
+  <meta name="twitter:title" content="杨世鑫｜正大明 董事长">
   <meta name="twitter:description" content="以产业化的方式守护手艺，以市场化的语言讲述传统。">
   <meta name="twitter:image" content="https://www.longtouguoqi.com.cn/images/card-yang-shixin-share.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,13 +46,14 @@
 .card-brandbar .slogan { font-size: 11px; color: rgba(240,201,122,0.7); letter-spacing: 2px; }
 .card-hero { padding: 30px 26px 26px; text-align: center; }
 .card-avatar {
-  width: 108px; height: 108px; margin: 0 auto 18px; border-radius: 50%;
-  border: 1.5px solid rgba(240,201,122,0.75);
+  width: 168px; height: 168px; margin: 0 auto 20px; border-radius: 50%;
+  border: 2px solid rgba(240,201,122,0.8);
   background: radial-gradient(circle at 50% 35%, #7a231a 0%, #4a1410 100%);
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Noto Serif SC', serif; font-size: 38px; font-weight: 700;
-  color: #F0C97A; letter-spacing: 3px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
+.card-avatar-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .card-sheet h1 { font-family: 'Noto Serif SC', serif; font-size: 1.95rem; font-weight: 700; color: #FDF3E3; letter-spacing: 6px; margin-bottom: 8px; }
 .card-role { color: #F0C97A; font-size: 1.02rem; font-weight: 600; margin-bottom: 4px; letter-spacing: 1px; }
 .card-org { color: rgba(253,243,227,0.72); font-size: 0.84rem; margin-bottom: 2px; }
@@ -86,9 +87,16 @@
 .card-flow span { font-size: 0.8rem; color: #FDF3E3; background: rgba(240,201,122,0.10); border: 1px solid rgba(240,201,122,0.25); border-radius: 6px; padding: 6px 10px; }
 .card-flow i { font-style: normal; color: rgba(240,201,122,0.75); font-size: 0.8rem; }
 .card-brands { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
-.card-brand { background: rgba(0,0,0,0.2); border: 1px solid rgba(240,201,122,0.2); border-radius: 10px; padding: 12px 14px; }
+.card-brand {
+  position: relative; display: block; text-decoration: none;
+  background: rgba(0,0,0,0.2); border: 1px solid rgba(240,201,122,0.2);
+  border-radius: 10px; padding: 12px 30px 12px 14px;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+a.card-brand:hover { background: rgba(0,0,0,0.34); border-color: rgba(240,201,122,0.55); transform: translateY(-2px); }
 .card-brand b { display: block; font-family: 'Noto Serif SC', serif; font-size: 0.92rem; color: #F0C97A; font-weight: 700; margin-bottom: 4px; letter-spacing: 1px; }
 .card-brand em { font-style: normal; font-size: 0.76rem; color: rgba(253,243,227,0.7); line-height: 1.6; }
+.card-brand i { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-style: normal; font-size: 0.9rem; color: rgba(240,201,122,0.75); }
 .card-stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; padding: 6px 26px 0; }
 .card-stat { background: rgba(0,0,0,0.22); border: 1px solid rgba(240,201,122,0.18); border-radius: 10px; padding: 14px 6px; text-align: center; }
 .card-stat b { display: block; font-family: 'Noto Serif SC', serif; font-size: 1.35rem; color: #F0C97A; font-weight: 700; }
@@ -115,7 +123,7 @@
 @media (max-width: 480px) {
   .card-main { padding: 4px 12px 48px; }
   .card-sheet h1 { font-size: 1.7rem; letter-spacing: 4px; }
-  .card-avatar { width: 92px; height: 92px; font-size: 32px; }
+  .card-avatar { width: 138px; height: 138px; }
   .card-brands { grid-template-columns: 1fr; }
   .card-stats { grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; }
   .card-stat b { font-size: 1.15rem; }
@@ -140,7 +148,7 @@
         <div class="card-avatar"><img src="images/card-yang-shixin-avatar.jpg" alt="杨世鑫" class="card-avatar-img"></div>
         <h1>杨世鑫</h1>
         <p class="card-role">董事长</p>
-        <p class="card-org">陕西龙头国漆文化产业有限公司</p>
+        
         <p class="card-org-sub">清华大学工商管理硕士 · 高级工艺美术师</p>
         <div class="card-chiprow"><span>清华大学工商管理硕士</span>
           <span>高级工艺美术师</span>
@@ -151,7 +159,7 @@
 
             <section class="card-block">
         <h2>个人简介</h2>
-        <p>杨世鑫，清华大学工商管理硕士，高级工艺美术师，现任陕西龙头国漆文化产业有限公司董事长，长期致力于中国传统漆艺的当代转化与非遗产业的现代化实践。</p>
+        <p>杨世鑫，清华大学工商管理硕士，高级工艺美术师，现任正大明文化产业集团董事长，长期致力于中国传统漆艺的当代转化与非遗产业的现代化实践。</p>
         <p>他以系统的管理学科训练为底，以对大漆工艺的深刻理解与敬畏为魂，将战略管理、品牌运营与产业思维注入一门古老手艺，推动企业从传统漆艺走向集漆树种植、生漆精制、漆器研发、文创衍生与非遗传习于一体的全产业链形态。</p>
       </section>
 
@@ -174,10 +182,10 @@
       <section class="card-block">
         <h2>四大品牌</h2>
         <div class="card-brands">
-          <div class="card-brand"><b>正大明漆</b><em>高端漆器与大师手作</em></div>
-          <div class="card-brand"><b>龙头国漆</b><em>生漆与漆材料全产业链</em></div>
-          <div class="card-brand"><b>牛王国漆</b><em>非遗文化与礼赠</em></div>
-          <div class="card-brand"><b>岁时记</b><em>东方生活美学文创</em></div>
+          <a class="card-brand" href="brand-zhengdaming.html"><b>正大明漆</b><em>高端漆器与大师手作</em><i>→</i></a>
+          <a class="card-brand" href="brand-longtou.html"><b>龙头国漆</b><em>生漆与漆材料全产业链</em><i>→</i></a>
+          <a class="card-brand" href="brand-niuwang.html"><b>牛王国漆</b><em>非遗文化与礼赠</em><i>→</i></a>
+          <a class="card-brand" href="brand-suishiji.html"><b>岁时记</b><em>东方生活美学文创</em><i>→</i></a>
         </div>
         <p class="card-note">覆盖「材料—器物—生活」全场景，合作伙伴遍布全球。</p>
       </section>
@@ -209,9 +217,8 @@
       <section class="card-block">
         <h2>联系方式</h2>
         <ul class="card-info">
-          <li><label>公司</label><span>陕西龙头国漆文化产业有限公司</span></li>
           <li><label>电话</label><a href="tel:15191893738">151-9189-3738</a></li>
-          <li><label>地址</label><span>陕西省西安市</span></li>
+          <li><label>地址</label><span>陕西省西安市高新区唐延路银河新坐标A座1707</span></li>
           <li><label>官网</label><a href="https://www.longtouguoqi.com.cn">longtouguoqi.com.cn</a></li>
         </ul>
         <div class="card-actions">

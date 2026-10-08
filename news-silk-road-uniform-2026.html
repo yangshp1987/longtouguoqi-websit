@@ -35,12 +35,12 @@
     .news-gallery figcaption { font-size: 13px; color: #777; padding: 10px 14px; line-height: 1.6; }
     .news-gallery--three { grid-template-columns: repeat(3, 1fr); }
     .news-gallery--three figcaption { font-size: 12px; padding: 9px 12px; }
-    /* 头图源文件已处理为 16:9 横图，此处按同比例铺满，不再二次裁切 */
-    body .page-banner { aspect-ratio: 16 / 9; height: auto; max-height: 620px; }
+    /* 桌面 16:9 横图铺满；手机改用 4:5 竖图，画面更接近满屏 */
+    body .page-banner { aspect-ratio: 16 / 9; height: auto; max-height: 760px; }
     body .page-banner img { object-position: center; }
     @media (max-width: 640px) {
       .news-gallery { grid-template-columns: 1fr; }
-      body .page-banner { max-height: none; }
+      body .page-banner { aspect-ratio: 4 / 5; max-height: none; }
     }
   </style>
   <link rel="alternate" hreflang="zh-CN" href="https://www.longtouguoqi.com.cn/news-silk-road-uniform-2026.html">
@@ -203,7 +203,10 @@
 
   <main>
     <section class="page-banner">
-      <img src="images/news-silkroad-polo.jpg" alt="当漂漆工艺「穿上身」：正大明为丝路电影节定制东方美学工作服">
+      <picture>
+        <source media="(max-width: 640px)" srcset="images/news-silkroad-polo-m.jpg">
+        <img src="images/news-silkroad-polo.jpg" alt="当漂漆工艺「穿上身」：正大明为丝路电影节定制东方美学工作服">
+      </picture>
       <div class="overlay"></div>
       <div class="content">
         <h1>企业动态</h1>

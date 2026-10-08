@@ -49,7 +49,8 @@
 
   <style>
     /* 16:9 hero fits the banner; article images are not cropped */
-    body .page-banner { aspect-ratio: 16 / 9; height: auto; max-height: 620px; }
+    /* 桌面 16:9 横图铺满；手机改用 4:5 竖图，画面更接近满屏 */
+    body .page-banner { aspect-ratio: 16 / 9; height: auto; max-height: 760px; }
     .news-gallery { align-items: start; }
     .news-gallery img { width: 100%; height: auto; max-height: 900px; object-fit: contain; display: block; }
     .news-gallery--three { grid-template-columns: repeat(3, 1fr); }
@@ -57,7 +58,7 @@
     @media (max-width: 640px) {
       .news-gallery { grid-template-columns: 1fr; }
       .news-gallery--three { grid-template-columns: 1fr; }
-      body .page-banner { max-height: none; }
+      body .page-banner { aspect-ratio: 4 / 5; max-height: none; }
     }
   </style>
 </head>
@@ -214,7 +215,10 @@
   </header>
 <main>
     <section class="page-banner">
-      <img src="../images/news-silkroad-giftbox.jpg" alt="「光映丝路」大漆ブローチ：一枚のブローチに宿る千年の漆芸と映画の光">
+      <picture>
+        <source media="(max-width: 640px)" srcset="../images/news-silkroad-giftbox-m.jpg">
+        <img src="../images/news-silkroad-giftbox.jpg" alt="「光映丝路」大漆ブローチ：一枚のブローチに宿る千年の漆芸と映画の光">
+      </picture>
       <div class="overlay"></div>
       <div class="content">
         <h1>企業動向</h1>

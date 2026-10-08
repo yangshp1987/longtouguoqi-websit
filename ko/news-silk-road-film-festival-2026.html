@@ -49,7 +49,8 @@
 
   <style>
     /* 16:9 hero fits the banner; article images are not cropped */
-    body .page-banner { aspect-ratio: 16 / 9; height: auto; max-height: 620px; }
+    /* 桌面 16:9 横图铺满；手机改用 4:5 竖图，画面更接近满屏 */
+    body .page-banner { aspect-ratio: 16 / 9; height: auto; max-height: 760px; }
     .news-gallery { align-items: start; }
     .news-gallery img { width: 100%; height: auto; max-height: 900px; object-fit: contain; display: block; }
     .news-gallery--three { grid-template-columns: repeat(3, 1fr); }
@@ -57,7 +58,7 @@
     @media (max-width: 640px) {
       .news-gallery { grid-template-columns: 1fr; }
       .news-gallery--three { grid-template-columns: 1fr; }
-      body .page-banner { max-height: none; }
+      body .page-banner { aspect-ratio: 4 / 5; max-height: none; }
     }
   </style>
 </head>
@@ -214,7 +215,10 @@
   </header>
 <main>
     <section class="page-banner">
-      <img src="../images/news-silkroad-guests.jpg" alt="정대명, 제13회 실크로드 국제영화제 공식 지정 공급업체로 선정 — 표칠 작업복과 대칠 브로치 ‘광영사로’ 영화제에 등장">
+      <picture>
+        <source media="(max-width: 640px)" srcset="../images/news-silkroad-guests-m.jpg">
+        <img src="../images/news-silkroad-guests.jpg" alt="정대명, 제13회 실크로드 국제영화제 공식 지정 공급업체로 선정 — 표칠 작업복과 대칠 브로치 ‘광영사로’ 영화제에 등장">
+      </picture>
       <div class="overlay"></div>
       <div class="content">
         <h1>기업 소식</h1>

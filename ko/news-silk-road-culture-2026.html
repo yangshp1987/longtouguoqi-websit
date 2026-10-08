@@ -48,17 +48,20 @@
   <link rel="alternate" hreflang="x-default" href="https://www.longtouguoqi.com.cn/news-silk-road-culture-2026.html">
 
   <style>
-    /* 16:9 hero fits the banner; article images are not cropped */
-    /* 桌面 16:9 横图铺满；手机改用 4:5 竖图，画面更接近满屏 */
-    body .page-banner { aspect-ratio: 16 / 9; height: auto; max-height: 760px; }
+    /* 桌面：头图占满整屏（扣除顶栏 118px）；平板 80px；手机保持 4:5 竖图 */
+    body .page-banner { height: calc(100vh - 118px); min-height: 420px; }
     .news-gallery { align-items: start; }
     .news-gallery img { width: 100%; height: auto; max-height: 900px; object-fit: contain; display: block; }
     .news-gallery--three { grid-template-columns: repeat(3, 1fr); }
     .news-gallery--three figcaption { font-size: 12px; padding: 9px 12px; }
+    .news-gallery--single { grid-template-columns: 1fr; max-width: 560px; margin-left: auto; margin-right: auto; }
+    @media (max-width: 768px) {
+      body .page-banner { height: calc(100vh - 80px); }
+    }
     @media (max-width: 640px) {
       .news-gallery { grid-template-columns: 1fr; }
       .news-gallery--three { grid-template-columns: 1fr; }
-      body .page-banner { aspect-ratio: 4 / 5; max-height: none; }
+      body .page-banner { height: auto; aspect-ratio: 4 / 5; }
     }
   </style>
 </head>
@@ -217,7 +220,7 @@
     <section class="page-banner">
       <picture>
         <source media="(max-width: 640px)" srcset="../images/news-silkroad-team-orangehall-m.jpg">
-        <img src="../images/news-silkroad-team-orangehall.jpg" alt="장안에서 실크로드로: 정대명, 칠을 매개로 세계 영화와 대화하다">
+        <img src="../images/news-silkroad-team-orangehall-w.jpg" alt="장안에서 실크로드로: 정대명, 칠을 매개로 세계 영화와 대화하다">
       </picture>
       <div class="overlay"></div>
       <div class="content">
@@ -269,6 +272,18 @@
 
 <h2>세계로 나아가는 무형문화유산은 ‘사용되어야’ 한다</h2>
 <p>오랫동안 대칠 공예는 전시 케이스와 박물관에 놓여 ‘보호받아야 할’ 전통으로 취급되어 왔습니다. 그러나 정대명은 무형문화유산의 진정한 생명력이 사용되고, 착용되고, 현대의 삶 속으로 들어가는 데 있다고 줄곧 믿어 왔습니다. 이번 영화제와의 협력은 바로 그 이념의 실천입니다. 작업복은 스태프의 몸에 있고, 브로치는 귀빈의 가슴에 있습니다. 대칠은 더 이상 정지된 전시품이 아니라 흐르고, 참여하며, 세계와 대화하는 현대의 언어가 되었습니다.</p>
+
+<h2>브로치에서 기물로: 정대명 칠기의 일상</h2>
+<p>브로치는 칠예가 만드는 가장 작은 작품이지만, 정대명의 칠은 더 많이 기물 위에 놓입니다 — 화기(꽃병), 기물(그릇), 장식품, 다기. 목태·포태·도태 위에 칠을 여러 겹 올리고 연마와 추광을 거치면 마침내 '가라앉은 빛'이 나타납니다. 처음에는 눈부시지 않지만, 쓸수록 밝아지고 시간이 갈수록 맑아집니다. 정대명 칠기의 칠료와 태골은 모두 자체 체계에서 나옵니다. 친바 산맥의 칠수림이 생칠을 공급하고 자체 공방이 연제와 칠칠을 담당하므로, 모든 기물은 그 칠수와 장인으로 거슬러 올라갈 수 있습니다.</p>
+
+<figure class="news-gallery news-gallery--single">
+  <figure>
+    <img src="../images/news-silkroad-vase.jpg" alt="정대명 칠기 화기 시리즈">
+    <figcaption>정대명 칠기·화기 시리즈. 태골 위에 대칠을 여러 겹 올리고 수작업 추광으로 마무리한다</figcaption>
+  </figure>
+</figure>
+
+<p>영화제 같은 국제 무대에서는 브로치와 작업복이 가장 눈에 잘 띄는 칠입니다. 그러나 더 긴 시간 속에서 대칠을 일상으로 되돌려 놓는 것은 이 기물들입니다. 꽃 한 가지를 꽂고, 차 한 잔을 따르고, 책상 위에 놓습니다. 무형문화유산의 진정한 계승은 바로 사용되는 매일의 순간에 일어납니다.</p>
 
 <p>장안에서 실크로드로, 칠림에서 영화제 현장으로. 정대명은 브로치 하나와 옷 한 벌로 동양 미학과 국제 문화의 악수를 성사시켰습니다. 그것은 백년 칠행의 현대적 전환이자, 중국 무형문화유산이 세계를 향해 나아가는 부드럽지만 확고한 출발입니다.</p>
         </div>

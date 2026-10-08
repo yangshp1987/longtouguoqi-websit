@@ -48,17 +48,20 @@
   <link rel="alternate" hreflang="x-default" href="https://www.longtouguoqi.com.cn/news-silk-road-film-festival-2026.html">
 
   <style>
-    /* 16:9 hero fits the banner; article images are not cropped */
-    /* 桌面 16:9 横图铺满；手机改用 4:5 竖图，画面更接近满屏 */
-    body .page-banner { aspect-ratio: 16 / 9; height: auto; max-height: 760px; }
+    /* 桌面：头图占满整屏（扣除顶栏 118px）；平板 80px；手机保持 4:5 竖图 */
+    body .page-banner { height: calc(100vh - 118px); min-height: 420px; }
     .news-gallery { align-items: start; }
     .news-gallery img { width: 100%; height: auto; max-height: 900px; object-fit: contain; display: block; }
     .news-gallery--three { grid-template-columns: repeat(3, 1fr); }
     .news-gallery--three figcaption { font-size: 12px; padding: 9px 12px; }
+    .news-gallery--single { grid-template-columns: 1fr; max-width: 560px; margin-left: auto; margin-right: auto; }
+    @media (max-width: 768px) {
+      body .page-banner { height: calc(100vh - 80px); }
+    }
     @media (max-width: 640px) {
       .news-gallery { grid-template-columns: 1fr; }
       .news-gallery--three { grid-template-columns: 1fr; }
-      body .page-banner { aspect-ratio: 4 / 5; max-height: none; }
+      body .page-banner { height: auto; aspect-ratio: 4 / 5; }
     }
   </style>
 </head>
@@ -217,7 +220,7 @@
     <section class="page-banner">
       <picture>
         <source media="(max-width: 640px)" srcset="../images/news-silkroad-guests-m.jpg">
-        <img src="../images/news-silkroad-guests.jpg" alt="Zhengdaming Named Designated Supplier of the 13th Silk Road International Film Festival, with Drift-Lacquer Uniforms and the 'Light on the Silk Road' Lacquer Brooch">
+        <img src="../images/news-silkroad-guests-w.jpg" alt="Zhengdaming Named Designated Supplier of the 13th Silk Road International Film Festival, with Drift-Lacquer Uniforms and the 'Light on the Silk Road' Lacquer Brooch">
       </picture>
       <div class="overlay"></div>
       <div class="content">

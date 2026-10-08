@@ -36,7 +36,7 @@
     .news-gallery--three { grid-template-columns: repeat(3, 1fr); }
     .news-gallery--three figcaption { font-size: 12px; padding: 9px 12px; }
     .news-gallery--single { grid-template-columns: 1fr; max-width: 560px; margin-left: auto; margin-right: auto; }
-    /* 桌面：头图占满整屏（扣除顶栏 118px）；平板 80px；手机保持 4:5 竖图 */
+    /* 桌面：头图占满整屏（扣除顶栏 118px）；平板 80px；手机 3:2 横图 */
     body .page-banner { height: calc(100vh - 118px); min-height: 420px; }
     body .page-banner img { object-position: center; }
     @media (max-width: 768px) {
@@ -44,7 +44,7 @@
     }
     @media (max-width: 640px) {
       .news-gallery { grid-template-columns: 1fr; }
-      body .page-banner { height: auto; aspect-ratio: 4 / 5; }
+      body .page-banner { height: auto; aspect-ratio: 3 / 2; }
     }
   </style>
   <link rel="alternate" hreflang="zh-CN" href="https://www.longtouguoqi.com.cn/news-silk-road-culture-2026.html">

@@ -1061,11 +1061,13 @@ a.brand-card {
   z-index: 2;
 }
 
-.page-banner h1 {
+.page-banner h1,
+.page-banner .banner-title {
   font-family: var(--font-serif);
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 12px;
 }
+.page-banner .banner-title { font-weight: bold; line-height: inherit; }
 
 .page-banner p {
   font-size: 1rem;
@@ -2206,7 +2208,7 @@ body .page-banner { margin-top: 118px; }
 
   /* 4. 内页 banner 变矮 */
   body .page-banner { height: 200px; margin-top: 80px; }
-  .page-banner h1 { font-size: 1.5rem; }
+  .page-banner h1, .page-banner .banner-title { font-size: 1.5rem; }
   .page-banner p { font-size: 0.85rem; }
 
   /* 5. 数据条保持三列 */

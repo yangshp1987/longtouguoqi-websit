@@ -12,13 +12,13 @@
   <meta property="og:title" content="정대명, 제13회 실크로드 국제영화제 공식 지정 공급업체로 선정 — 표칠 작업복과 대칠 브로치 ‘광영사로’ 영화제에 등장">
   <meta property="og:description" content="제13회 실크로드 국제영화제가 시안에서 열렸습니다. 정대명은 영화제 지정 공급업체로 선정되어 표칠 작업복과 대칠 예술 브로치 ‘광영사로’를 특별 제작했으며, 천 년의 대칠 공예로 영화제를 빛냈습니다.">
   <meta property="og:url" content="https://www.longtouguoqi.com.cn/ko/news-silk-road-film-festival-2026.html">
-  <meta property="og:image" content="https://www.longtouguoqi.com.cn/images/news-silkroad-guests.jpg">
+  <meta property="og:image" content="https://www.longtouguoqi.com.cn/images/news-silkroad-guests-share.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="正大明, 2026 중국 농민 풍수절 「匠美乡村·丝路繁花」 국제 교류 활동 참가">
   <meta name="twitter:description" content="제13회 실크로드 국제영화제가 시안에서 열렸습니다. 정대명은 영화제 지정 공급업체로 선정되어 표칠 작업복과 대칠 예술 브로치 ‘광영사로’를 특별 제작했으며, 천 년의 대칠 공예로 영화제를 빛냈습니다.">
-  <meta name="twitter:image" content="https://www.longtouguoqi.com.cn/images/news-silkroad-guests.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://www.longtouguoqi.com.cn/images/news-silkroad-guests-share.jpg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="800">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -59,8 +59,17 @@
       body .page-banner { height: calc(100vh - 80px); }
     }
     @media (max-width: 640px) {
-      .news-gallery { grid-template-columns: 1fr; }
+      .article-wrap h1 { font-size: 22px !important; line-height: 1.45 !important; margin: 0 0 14px; }
+      .article-meta { font-size: 12.5px; margin: 0 0 20px; padding-bottom: 14px; border-bottom: 1px solid rgba(0,0,0,.08); }
+      .article-body { padding-bottom: 12px; }
+      .article-body p { font-size: 17px; line-height: 1.8; letter-spacing: .2px; margin: 0 0 22px; }
+      .article-body h2 { font-size: 19px; line-height: 1.5; margin: 32px 0 14px; padding-left: 11px; border-left: 3px solid var(--primary, #8B1A1A); }
+      .article-body blockquote { font-size: 15.5px; line-height: 1.75; padding: 12px 14px; margin: 0 0 22px; }
+      .news-gallery { grid-template-columns: 1fr; gap: 12px; margin: 24px 0; }
       .news-gallery--three { grid-template-columns: 1fr; }
+      .news-gallery--single { max-width: 100%; }
+      .news-gallery img { border-radius: 6px; }
+      .news-gallery figcaption { font-size: 12.5px; color: #999; text-align: center; padding: 8px 4px 0; }
       body .page-banner { height: auto; aspect-ratio: 3 / 2; }
     }
   </style>

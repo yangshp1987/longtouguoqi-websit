@@ -1017,6 +1017,9 @@ a.brand-card {
   color: var(--gold);
 }
 
+.footer-bottom a { color: inherit; text-decoration: none; transition: color .2s; }
+.footer-bottom a:hover { color: var(--gold); text-decoration: underline; }
+
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 24px;

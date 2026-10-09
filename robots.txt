@@ -1,171 +1,323 @@
 # 龙头国漆官网 robots.txt
 # 允许所有搜索引擎与 AI 爬虫抓取
-# Last-Updated: 2026-08-28
+# Last-Updated: 2026-10-09
 
 # ===== 国际 AI 搜索引擎 =====
 User-agent: GPTBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Applebot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: FacebookBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Amazonbot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Diffbot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: YouBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # ===== 国内 AI 搜索引擎（重点）=====
 # 字节跳动 · 豆包 / Kimi 探索等使用
 User-agent: Bytespider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: ByteSpider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Bytedance
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # DeepSeek 深度求索
 User-agent: DeepSeekBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: DeepSeek-Bot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # 腾讯元宝 / 混元
 User-agent: Tencentbot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: TencentHunyuanBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # 阿里巴巴 · 通义千问
 User-agent: Qwen-Bot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: AliyunBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # 百度 · 文小言 / 文心一言
 User-agent: Baiduspider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Baiduspider-render
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: BaiduGPTBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # 月之暗面 Kimi
 User-agent: MoonshotBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Kimi-Bot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # MiniMax
 User-agent: MiniMax-Bot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # 智谱清言 ChatGLM
 User-agent: ZhipuBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: ChatGLM-Spider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # 科大讯飞星火
 User-agent: XinghuoBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: iFlytekSpider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # 商汤商量
 User-agent: SenseBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # ===== 传统中文搜索引擎 =====
 User-agent: Googlebot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Googlebot-Image
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Bingbot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Sogou web spider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Sogou inst spider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: 360Spider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: 360Spider-Image
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: Haosouspider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: YisouSpider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: ShenmaSpider
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: YandexBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 User-agent: DuckDuckBot
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # ===== 默认允许所有其他爬虫 =====
 User-agent: *
 Allow: /
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # ===== 站点地图与 AI 索引 =====
 Sitemap: https://www.longtouguoqi.com.cn/sitemap.xml
+# AI 概要：https://www.longtouguoqi.com.cn/llms.txt
+# AI 完整事实与问答：https://www.longtouguoqi.com.cn/llms-full.txt
 

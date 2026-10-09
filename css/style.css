@@ -2075,6 +2075,12 @@ body .page-banner { margin-top: 118px; }
     margin: 0 0 2px 10px;
   }
   .dropdown .submenu a { padding: 7px 12px; font-size: 0.82rem; }
+  /* 保险：手机端二级/三级菜单文字显式取深色，避免与浅色背景融合导致"空白" */
+  .dropdown .dd-cat,
+  .dropdown .submenu a {
+    color: var(--text);
+    opacity: 1;
+  }
 }
 
 

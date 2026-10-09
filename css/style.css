@@ -1248,11 +1248,18 @@ a.brand-card {
   }
   .dropdown::before { display: none; }
   .dropdown a {
+    display: block;
     padding: 9px 14px;
     font-size: 0.88rem;
+    color: var(--text);
+    background: rgba(139,31,40,0.03);
     border-bottom: 1px dashed rgba(0,0,0,0.05);
   }
-  .dropdown a:hover { padding-left: 18px; }
+  .dropdown a:hover {
+    color: var(--primary);
+    background: rgba(139,31,40,0.08);
+    padding-left: 18px;
+  }
   
   .mobile-toggle {
     display: flex;

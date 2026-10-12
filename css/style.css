@@ -624,6 +624,9 @@ a.brand-card {
   background: var(--bg-warm);
 }
 
+/* 卡片图片包链接时，保持与其他卡片一致的 4:3 显示区域 */
+.product-card .image > a { display: block; width: 100%; height: 100%; }
+
 .product-card .image img {
   width: 100%; height: 100%;
   object-fit: cover;

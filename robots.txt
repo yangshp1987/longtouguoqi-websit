@@ -317,7 +317,7 @@ Disallow: /*.md$
 Disallow: /%E4%BA%A4%E4%BB%98%E7%89%A9
 
 # ===== 站点地图与 AI 索引 =====
-Sitemap: https://www.longtouguoqi.com.cn/sitemap.xml
-# AI 概要：https://www.longtouguoqi.com.cn/llms.txt
-# AI 完整事实与问答：https://www.longtouguoqi.com.cn/llms-full.txt
+Sitemap: https://www.zendamin.com/sitemap.xml
+# AI 概要：https://www.zendamin.com/llms.txt
+# AI 完整事实与问答：https://www.zendamin.com/llms-full.txt
 

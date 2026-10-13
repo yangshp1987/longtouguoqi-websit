@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Join Zhengdaming and work with the intangible cultural heritage of Chinese lacquer. Positions including lacquer technician, product design and e-commerce operations are open on an ongoing basis; Zhengdaming Cultural Industry Group welcomes those who share the commitment.">
+  <meta name="description" content="Join Zhengdaming and work with the intangible cultural heritage of Chinese lacquer. Positions including lacquer technician, product design, e-commerce operations and international trade are open on an ongoing basis, with responsibilities, requirements and how to apply; Zhengdaming Cultural Industry Group welcomes those who share the commitment.">
   <meta name="theme-color" content="#8C2B1F">
-  <title>Join Zhengdaming</title>
+  <title>Join Zhengdaming - Careers</title>
   <!-- 社交分享卡片（微信/微博/Twitter） -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Zhengdaming">
-  <meta property="og:title" content="Join Zhengdaming">
-  <meta property="og:description" content="Join Zhengdaming and work with the intangible cultural heritage of Chinese lacquer. Positions including lacquer technician, product design and e-commerce operations are open on an ongoing basis; Zhengdaming Cultural Industry Group welcomes those who share the commitment.">
+  <meta property="og:title" content="Join Zhengdaming - Careers">
+  <meta property="og:description" content="Join Zhengdaming and work with the intangible cultural heritage of Chinese lacquer. Positions including lacquer technician, product design and e-commerce operations are open on an ongoing basis.">
   <meta property="og:url" content="https://www.zendamin.com/en/join.html">
   <meta property="og:image" content="https://www.zendamin.com/images/hero-4-share.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Join Zhengdaming">
-  <meta name="twitter:description" content="Join Zhengdaming and work with the intangible cultural heritage of Chinese lacquer. Positions including lacquer technician, product design and e-commerce operations are open on an ongoing basis; Zhengdaming Cultural Industry Group welcomes those who share the commitment.">
+  <meta name="twitter:title" content="Join Zhengdaming - Careers">
+  <meta name="twitter:description" content="Join Zhengdaming and work with the intangible cultural heritage of Chinese lacquer. Positions including lacquer technician, product design and e-commerce operations are open on an ongoing basis.">
   <meta name="twitter:image" content="https://www.zendamin.com/images/hero-4-share.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,10 +29,99 @@
   <link rel="alternate" hreflang="ja" href="https://www.zendamin.com/ja/join.html">
   <link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/join.html">
   <link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/join.html">
-  <script type="application/ld+json" id="ld-geo">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"Join Zhengdaming","description":"Join Zhengdaming and work with the intangible cultural heritage of Chinese lacquer. Positions including lacquer technician, product design and e-commerce operations are open on an ongoing basis; Zhengdaming Cultural Industry Group welcomes those who share the commitment.","url":"https://www.zendamin.com/en/join.html","inLanguage":"en","isPartOf":{"@id":"https://www.zendamin.com/#website"},"publisher":{"@id":"https://www.zendamin.com/#group"},"primaryImageOfPage":"https://www.zendamin.com/images/hero-4.jpg"}]}</script>
+  <script type="application/ld+json" id="ld-geo">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "Join Zhengdaming - Careers", "description": "Join Zhengdaming and work with the intangible cultural heritage of Chinese lacquer. Positions including lacquer technician, product design, e-commerce operations and international trade are open on an ongoing basis, with responsibilities, requirements and how to apply; Zhengdaming Cultural Industry Group welcomes those who share the commitment.", "url": "https://www.zendamin.com/en/join.html", "inLanguage": "en", "isPartOf": {"@id": "https://www.zendamin.com/#website"}, "publisher": {"@id": "https://www.zendamin.com/#group"}, "primaryImageOfPage": "https://www.zendamin.com/images/hero-4.jpg"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can fresh graduates or career changers apply?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The lacquer technician / apprentice position requires no prior experience; the company provides systematic training under ICH representative inheritors. For other positions, please apply against the responsibilities and requirements listed for each role."}}, {"@type": "Question", "name": "How soon will I hear back after sending my CV?", "acceptedAnswer": {"@type": "Answer", "text": "We reply within three working days. If your enquiry is urgent, you may also call 130-7291-3676 on weekdays between 9:00–18:00."}}, {"@type": "Question", "name": "Can I apply for more than one position?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. State your first-choice \"position applied for + name\" in the email subject line; if you would like to be considered for other positions as well, you can add a note in the body of your CV."}}, {"@type": "Question", "name": "Where are the work locations?", "acceptedAnswer": {"@type": "Answer", "text": "Group headquarters is in Xi'an, Shaanxi Province, and the production base is in Longtou Village, Chengguan Town, Pingli County, Ankang. Positions such as lacquer technician and lacquer grove base management require residence at the base; please refer to the location stated for each position."}}]}]}</script>
+  <!-- 招聘页专属样式（在全局 style.css 基础上扩展，仅作用于本页） -->
+  <style>
+    /* ===== 在招岗位列表 ===== */
+    .job-list { display: flex; flex-direction: column; gap: 16px; }
+    .job-item {
+      background: var(--bg);
+      border: 1px solid rgba(201,168,92,0.25);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .job-item:hover { border-color: var(--gold); }
+    .job-item.open { border-color: var(--gold); box-shadow: 0 8px 24px var(--shadow); }
+    .job-head {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 16px; padding: 22px 28px; cursor: pointer; user-select: none;
+    }
+    .job-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem; letter-spacing: 1px;
+      color: var(--primary); margin-bottom: 10px;
+    }
+    .job-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+    .job-tag {
+      display: inline-block; font-size: 0.78rem; line-height: 1;
+      padding: 6px 12px; border-radius: 999px;
+      color: var(--text-light); background: var(--bg-warm);
+      border: 1px solid rgba(201,168,92,0.25);
+    }
+    .job-tag.tag-dept { color: var(--primary); background: rgba(140,43,31,0.06); font-weight: 500; }
+    .job-tag.tag-hot { color: var(--white); background: var(--primary); border-color: var(--primary); }
+    .job-arrow {
+      flex: none; width: 32px; height: 32px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); border: 1px solid rgba(201,168,92,0.4);
+      font-size: 0.85rem; transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .job-item.open .job-arrow { transform: rotate(180deg); background: var(--gold); color: var(--white); }
+    .job-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .job-item.open .job-body { max-height: 640px; }
+    .job-body-inner {
+      padding: 4px 28px 26px;
+      border-top: 1px dashed rgba(201,168,92,0.35);
+      margin: 0 28px; padding-left: 0; padding-right: 0;
+    }
+    .job-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding-top: 18px; }
+    .job-cols h4 {
+      font-family: var(--font-serif); font-size: 0.95rem;
+      color: var(--gold); letter-spacing: 2px; margin-bottom: 10px;
+    }
+    .job-cols li {
+      position: relative; padding-left: 16px;
+      font-size: 0.9rem; color: var(--text-light); line-height: 1.9;
+    }
+    .job-cols li::before {
+      content: ""; position: absolute; left: 0; top: 0.85em;
+      width: 6px; height: 6px; background: var(--gold); border-radius: 1px;
+      transform: rotate(45deg);
+    }
+    .jobs-note { margin-top: 28px; text-align: center; font-size: 0.88rem; color: var(--text-lighter); }
+    .jobs-note a { color: var(--primary); font-weight: 500; }
+    .jobs-note a:hover { color: var(--primary-light); }
+    /* ===== 招聘流程 & 福利待遇 ===== */
+    /* 全局样式为 5 列网格，本页为 4 张卡片，覆盖为 4 列使其水平居中 */
+    .hire-flow .process-steps,
+    #join-welfare .process-steps { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .hire-flow .process-step p,
+    #join-welfare .process-step p { min-height: 3.4em; }
+    @media (max-width: 1024px) {
+      .hire-flow .process-steps,
+      #join-welfare .process-steps { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .hire-flow .process-steps,
+      #join-welfare .process-steps { grid-template-columns: 1fr; }
+      .hire-flow .process-step p,
+      #join-welfare .process-step p { min-height: 0; }
+    }
+    /* ===== FAQ ===== */
+    .join-faq { max-width: 860px; margin: 0 auto; }
+    /* ===== 响应式 ===== */
+    @media (max-width: 768px) {
+      .job-head { padding: 18px 18px; flex-direction: column; align-items: flex-start; }
+      .job-arrow { display: none; }
+      .job-body-inner { margin: 0 18px; }
+      .job-cols { grid-template-columns: 1fr; gap: 18px; }
+      .job-title { font-size: 1.1rem; }
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
+<header class="header">
     <div class="topbar">
       <div class="container topbar-inner">
         <div class="topbar-links">
@@ -165,7 +254,9 @@
           <div class="dropdown">
             <a href="join.html#join-idea">Talent Philosophy</a>
             <a href="join.html#join-jobs">Open Positions</a>
+            <a href="join.html#join-flow">Hiring Process</a>
             <a href="join.html#join-welfare">Benefits</a>
+            <a href="join.html#join-faq">FAQ</a>
             <a href="join.html#join-contact">How to Apply</a>
           </div>
         </div></nav>
@@ -183,7 +274,7 @@
     </div>
   </header>
 
-  <main>
+<main>
     <section class="page-banner">
       <img src="../images/hero-4.jpg" alt="Join Zhengdaming">
       <div class="overlay"></div>
@@ -213,79 +304,339 @@
           </div>
           <div class="intro-text">
             <h3>People who keep the craft, and people who get things done</h3>
-            <p>Zhengdaming grew out of an old trading house founded in 1925, and today is an industry group covering lacquer tree planting, raw lacquer collection, refining and processing, lacquerware making and cultural product development. The lacquer trade cannot be hurried — a lacquer tree takes five years before it can be tapped, and one piece of lacquerware needs eight coats and months of curing. We believe people are the same: slower is often faster.</p>
-            <p>Here you touch the full industry chain from lacquer grove to exhibition hall, learn traditional techniques from a provincial-level ICH inheritor, and take part in designing products for contemporary life. We respect the craft, and we respect everyone who makes the craft their career.</p>
+            <p>Zhengdaming grew out of an old trading house founded in 1925, and today is an industry group covering lacquer tree planting, raw lacquer collection, refining and processing, lacquerware making and cultural product development. The lacquer trade cannot be hurried — a lacquer tree takes five years before it can be tapped, and one piece of lacquerware needs eight coats of lacquer and months of curing in a humid chamber. We believe people are the same: slower is often faster.</p>
+            <p>Here you touch the full industry chain from lacquer grove to exhibition hall, learn traditional techniques from a provincial-level representative inheritor of intangible cultural heritage, and take part in designing products for contemporary life. We respect the craft, and we respect everyone who makes the craft their career.</p>
             <p>If "integrity in the heart, honesty in the vessel" speaks to you, we welcome you to join us.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 在招岗位 -->
+    <!-- 在招岗位：岗位名称 / 所属部门 / 工作地点 / 招聘人数 / 岗位职责 / 任职要求 -->
     <section class="section section-warm" id="join-jobs">
       <div class="container">
         <div class="section-header">
           <span class="section-label">Open Positions</span>
           <h2 class="section-title">Open Positions</h2>
-          <p class="section-desc">These positions are open on an ongoing basis; please refer to the latest postings for details. CVs are welcome at any time.</p>
+          <p class="section-desc">These positions are open on an ongoing basis. Click a position card to see its responsibilities and requirements; the latest job posting applies.</p>
         </div>
-        <div class="coop-grid">
-          <!-- 岗位发布格式：岗位名称 / 部门 / 工作地点 / 人数 / 要求，整理好后替换以下示例 -->
-          <div class="coop-card">
-            <h3>Lacquer Technician / Apprentice</h3>
-            <p>Lacquering, gold tracery and inlay. No prior experience required — the company provides systematic training under ICH inheritors.</p>
+        <div class="job-list">
+          <div class="job-item open">
+            <div class="job-head">
+              <div class="job-title-wrap">
+                <h3 class="job-title">Lacquer Technician / Apprentice</h3>
+                <div class="job-meta">
+                  <span class="job-tag tag-dept">Production Center</span>
+                  <span class="job-tag">Ankang, Shaanxi · Pingli</span>
+                  <span class="job-tag">Several</span>
+                  <span class="job-tag">Full-time</span>
+                  <span class="job-tag tag-hot">No experience required · Coached by ICH inheritors</span>
+                </div>
+              </div>
+              <span class="job-arrow">▾</span>
+            </div>
+            <div class="job-body">
+              <div class="job-body-inner">
+                <div class="job-cols">
+                  <div>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                      <li>Learn and carry out traditional processes such as lacquering, gold tracery and inlay under the guidance of ICH representative inheritors;</li>
+                      <li>Complete lacquerware production tasks to process standards, maintaining both quality and schedule;</li>
+                      <li>Maintain lacquer craft tools and the workshop, and keep records of each process.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Requirements</h4>
+                    <ul>
+                      <li>No experience or specific major required; genuine interest in hands-on craft;</li>
+                      <li>Patient and detail-oriented, able to focus on repetitive processes and accept systematic apprenticeship training;</li>
+                      <li>Able to live and work at the Pingli base.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="coop-card">
-            <h3>Lacquerware Product Design</h3>
-            <p>Responsible for design and development of lacquerware and cultural creative products; a background in industrial design or arts and crafts preferred.</p>
+
+          <div class="job-item">
+            <div class="job-head">
+              <div class="job-title-wrap">
+                <h3 class="job-title">Lacquerware Product Design</h3>
+                <div class="job-meta">
+                  <span class="job-tag tag-dept">Product Design Department</span>
+                  <span class="job-tag">Xi'an, Shaanxi</span>
+                  <span class="job-tag">1 position</span>
+                  <span class="job-tag">Full-time</span>
+                </div>
+              </div>
+              <span class="job-arrow">▾</span>
+            </div>
+            <div class="job-body">
+              <div class="job-body-inner">
+                <div class="job-cols">
+                  <div>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                      <li>Design and develop lacquerware and cultural creative products, producing design proposals and renderings;</li>
+                      <li>Follow the process from prototyping and trial production through to mass production, keeping the design faithfully realised;</li>
+                      <li>Take part in market research and exhibitions to keep expanding the product line.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Requirements</h4>
+                    <ul>
+                      <li>Background in industrial design, arts and crafts or a related field;</li>
+                      <li>Proficient with Rhino, KeyShot, Photoshop and other design software;</li>
+                      <li>Knowledge of Chinese lacquer techniques or traditional cultural products preferred.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="coop-card">
-            <h3>E-commerce Operations / Livestream</h3>
-            <p>Responsible for store operations and livestream selling on Taobao, Douyin and other platforms; experience in the lacquer or art collectibles category preferred.</p>
+
+          <div class="job-item">
+            <div class="job-head">
+              <div class="job-title-wrap">
+                <h3 class="job-title">E-commerce Operations / Livestream</h3>
+                <div class="job-meta">
+                  <span class="job-tag tag-dept">E-commerce Division</span>
+                  <span class="job-tag">Xi'an, Shaanxi</span>
+                  <span class="job-tag">2 positions</span>
+                  <span class="job-tag">Full-time</span>
+                </div>
+              </div>
+              <span class="job-arrow">▾</span>
+            </div>
+            <div class="job-body">
+              <div class="job-body-inner">
+                <div class="job-cols">
+                  <div>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                      <li>Run day-to-day store operations and campaign planning on Taobao, Douyin and other platforms;</li>
+                      <li>Plan, host and review livestream selling sessions, continuously improving conversion;</li>
+                      <li>Produce short-video content, manage followers and analyse sales data.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Requirements</h4>
+                    <ul>
+                      <li>Familiar with the rules of major e-commerce platforms and livestream operations;</li>
+                      <li>Experience in lacquer, art collectibles, tea ware or similar categories preferred;</li>
+                      <li>Comfortable on camera, with content planning and data review skills.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="coop-card">
-            <h3>International Trade Specialist</h3>
-            <p>Responsible for developing overseas markets for raw lacquer and lacquerware; English or Japanese communication skills preferred.</p>
+
+          <div class="job-item">
+            <div class="job-head">
+              <div class="job-title-wrap">
+                <h3 class="job-title">International Trade Specialist</h3>
+                <div class="job-meta">
+                  <span class="job-tag tag-dept">International Business Department</span>
+                  <span class="job-tag">Xi'an, Shaanxi</span>
+                  <span class="job-tag">1 position</span>
+                  <span class="job-tag">Full-time</span>
+                </div>
+              </div>
+              <span class="job-arrow">▾</span>
+            </div>
+            <div class="job-body">
+              <div class="job-body-inner">
+                <div class="job-cols">
+                  <div>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                      <li>Develop overseas markets for raw lacquer and lacquerware, and acquire and maintain clients;</li>
+                      <li>Handle the full process of trade inquiries, quotations, documentation and order execution;</li>
+                      <li>Take part in international exhibitions and cross-border online channel operations.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Requirements</h4>
+                    <ul>
+                      <li>Written and spoken communication in English or Japanese;</li>
+                      <li>Understanding of basic international trade procedures and documentation;</li>
+                      <li>Export experience in handicrafts or chemical raw materials preferred.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="coop-card">
-            <h3>Lacquer Grove Base Management</h3>
-            <p>Responsible for day-to-day care of the lacquer groves and production management during tapping season; farming experience preferred; based at the Pingli site.</p>
+
+          <div class="job-item">
+            <div class="job-head">
+              <div class="job-title-wrap">
+                <h3 class="job-title">Lacquer Grove Base Management</h3>
+                <div class="job-meta">
+                  <span class="job-tag tag-dept">Production Base</span>
+                  <span class="job-tag">Ankang, Shaanxi · Pingli Base (on-site)</span>
+                  <span class="job-tag">2 positions</span>
+                  <span class="job-tag">Full-time</span>
+                </div>
+              </div>
+              <span class="job-arrow">▾</span>
+            </div>
+            <div class="job-body">
+              <div class="job-body-inner">
+                <div class="job-cols">
+                  <div>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                      <li>Handle day-to-day care of the lacquer groves, including tending, pest and disease control and patrol records;</li>
+                      <li>Organise production during the lacquer tapping season and manage raw lacquer harvest quality and output records;</li>
+                      <li>Support field implementation and data collection for research projects at the base.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Requirements</h4>
+                    <ul>
+                      <li>Familiarity with farming or forestry work preferred;</li>
+                      <li>Able to live on site at the base and work outdoors during the tapping season;</li>
+                      <li>Steady and responsible, with accurate recording of production data.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="coop-card">
-            <h3>Study Tour Instructor / Exhibition Hall Host</h3>
-            <p>Responsible for guiding at the ICH exhibition hall and delivering lacquer study courses; standard Mandarin and a warm manner required.</p>
+
+          <div class="job-item">
+            <div class="job-head">
+              <div class="job-title-wrap">
+                <h3 class="job-title">Study Tour Instructor / Exhibition Hall Host</h3>
+                <div class="job-meta">
+                  <span class="job-tag tag-dept">Cultural Tourism Division</span>
+                  <span class="job-tag">Ankang, Shaanxi · Longtou Village</span>
+                  <span class="job-tag">2 positions</span>
+                  <span class="job-tag">Full-time</span>
+                </div>
+              </div>
+              <span class="job-arrow">▾</span>
+            </div>
+            <div class="job-body">
+              <div class="job-body-inner">
+                <div class="job-cols">
+                  <div>
+                    <h4>Responsibilities</h4>
+                    <ul>
+                      <li>Provide daily guiding at the ICH exhibition hall and arrange visitor routes;</li>
+                      <li>Deliver lacquer craft study tour courses and keep improving course content and experience;</li>
+                      <li>Handle group bookings with the team and maintain reception records.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4>Requirements</h4>
+                    <ul>
+                      <li>Standard Mandarin, fluent expression and a warm manner;</li>
+                      <li>Background in education, tourism, museology or a related field preferred;</li>
+                      <li>Genuine interest in intangible cultural heritage and a strong service mindset.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="jobs-note">Haven't found a suitable position? You are also welcome to send your CV to the email address below, stating the direction you are interested in. We will add it to our talent pool and contact you as soon as a matching position opens.</p>
+      </div>
+    </section>
+
+    <!-- 招聘流程 -->
+    <section class="section hire-flow" id="join-flow">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Process</span>
+          <h2 class="section-title">Recruitment Process</h2>
+          <p class="section-desc">Four steps from application to onboarding, expected to take 1–2 weeks in total. We keep you informed of progress at every stage.</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step">
+            <span class="step-num">01</span>
+            <h3>Submit Your CV</h3>
+            <p>Apply by email, stating "position applied for + name"</p>
+          </div>
+          <div class="process-step">
+            <span class="step-num">02</span>
+            <h3>CV Screening</h3>
+            <p>Feedback on initial screening within three working days</p>
+          </div>
+          <div class="process-step">
+            <span class="step-num">03</span>
+            <h3>Interview / Practical Test</h3>
+            <p>Some positions include a craft test or portfolio review</p>
+          </div>
+          <div class="process-step">
+            <span class="step-num">04</span>
+            <h3>Offer and Onboarding</h3>
+            <p>Offer issued, followed by onboarding and pre-post training</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 福利待遇 -->
-    <section class="section" id="join-welfare">
+    <section class="section section-warm" id="join-welfare">
       <div class="container">
         <div class="section-header">
           <span class="section-label">Benefits</span>
           <h2 class="section-title">Benefits</h2>
+          <p class="section-desc">Only when craftspeople can live with dignity can the craft itself last.</p>
         </div>
         <div class="process-steps">
           <div class="process-step">
             <span class="step-num">01</span>
             <h3>Compensation</h3>
-            <p>Base salary + performance bonus + seniority pay</p>
+            <p>Base salary + performance bonus + seniority pay, with steady growth tied to contribution</p>
           </div>
           <div class="process-step">
             <span class="step-num">02</span>
             <h3>Social Insurance</h3>
-            <p>Full statutory social insurance; paid annual leave once confirmed in post</p>
+            <p>Full statutory social insurance; paid annual leave once confirmed in post, so you can work with peace of mind</p>
           </div>
           <div class="process-step">
             <span class="step-num">03</span>
             <h3>Craft Training</h3>
-            <p>Coaching by ICH inheritors, internal and external training</p>
+            <p>Coaching by ICH representative inheritors, with internal and external training, taught hand by hand</p>
           </div>
           <div class="process-step">
             <span class="step-num">04</span>
             <h3>Career Paths</h3>
-            <p>Three promotion tracks: management, craft and professional</p>
+            <p>Three promotion tracks — management, craft and professional — advancement based on ability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="section" id="join-faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="join-faq">
+          <div class="faq-item">
+            <div class="faq-question">Can fresh graduates or career changers apply?<span>+</span></div>
+            <div class="faq-answer">Yes. The lacquer technician / apprentice position requires no prior experience; the company provides systematic training under ICH representative inheritors. For other positions, please apply against the responsibilities and requirements listed for each role.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How soon will I hear back after sending my CV?<span>+</span></div>
+            <div class="faq-answer">We reply within three working days. If your enquiry is urgent, you may also call 130-7291-3676 on weekdays between 9:00–18:00.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I apply for more than one position?<span>+</span></div>
+            <div class="faq-answer">Yes. State your first-choice "position applied for + name" in the email subject line; if you would like to be considered for other positions as well, you can add a note in the body of your CV.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Where are the work locations?<span>+</span></div>
+            <div class="faq-answer">Group headquarters is in Xi'an, Shaanxi Province, and the production base is in Longtou Village, Chengguan Town, Pingli County, Ankang. Positions such as lacquer technician and lacquer grove base management require residence at the base; please refer to the location stated for each position.</div>
           </div>
         </div>
       </div>
@@ -297,22 +648,23 @@
         <div class="section-header">
           <span class="section-label">Contact</span>
           <h2 class="section-title">How to Apply</h2>
+          <p class="section-desc">Choose any one of the three; we look forward to meeting you.</p>
         </div>
         <div class="contact-cards">
           <div class="contact-card">
             <div class="icon">📞</div>
-            <h3>Telephone Inquiry</h3>
-            <p>130-7291-3676<br>Weekdays 9:00–18:00</p>
+            <h3>Contact Person</h3>
+            <p>Ms. Zhang<br><a href="tel:18209257504">182-0925-7504</a><br>Weekdays 9:00–18:00</p>
           </div>
           <div class="contact-card">
             <div class="icon">📍</div>
             <h3>Visits and Correspondence</h3>
-            <p>Pingli County, Ankang, Shaanxi Province<br>No. 118, Group 5, Longtou Village, Chengguan Town</p>
+            <p>25 Tangyan Road, High-Tech Zone, Xi'an<br>Room 1707, Block A, Galaxy New Coordinates</p>
           </div>
           <div class="contact-card">
             <div class="icon">✉️</div>
             <h3>Sending Your CV</h3>
-            <p>Put "position applied for + name" in the email subject line<br>We reply within three working days</p>
+            <p>Email: <a href="mailto:2500226321@qq.com">2500226321@qq.com</a><br>State "position applied for + name" in the subject line; we reply within three working days</p>
           </div>
         </div>
       </div>
@@ -320,14 +672,15 @@
 
     <section class="cta-banner">
       <div class="container">
-        <h2>We look forward to building the lacquer industry with you</h2>
+        <h2>We look forward to building the Chinese lacquer trade with you</h2>
         <p>You are welcome to book a visit to our lacquer grove base and ICH exhibition hall to see the working environment for yourself.</p>
         <a href="service.html#svc-online" class="btn">Learn more</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+
+<footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
@@ -367,5 +720,19 @@
   </footer>
 
   <script src="../js/main-en.js"></script>
+  <script>
+    // 在招岗位：手风琴展开/收起
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.job-item').forEach(function (item) {
+        var head = item.querySelector('.job-head');
+        if (!head) return;
+        head.addEventListener('click', function () {
+          var wasOpen = item.classList.contains('open');
+          document.querySelectorAll('.job-item.open').forEach(function (i) { i.classList.remove('open'); });
+          if (!wasOpen) item.classList.add('open');
+        });
+      });
+    });
+  </script>
 </body>
 </html>

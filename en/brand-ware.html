@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zhengdaming Lacquerware: four series of vessels, flower vessels, ornaments and collection pieces, hand-lacquered by intangible cultural heritage artisans, with custom gifting and engraved inscriptions available.">
+  <meta name="description" content="Four product categories under Zhengdaming: Lacquerware (vessels, flower vessels, ornaments, collection, lacquer jewelry), Lacquer Materials (raw lacquer, refined lacquer, tools, auxiliary materials), ICH Cultural and Creative Products and Master's Handmade, covering a complete lacquer industry chain from material to finished object.">
   <meta name="theme-color" content="#8C2B1F">
-  <title>Lacquerware | Zhengdaming</title>
+  <title>Zhengdaming Brand Products | Zhengdaming</title>
   <!-- 社交分享卡片（微信/微博/Twitter） -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Zhengdaming">
-  <meta property="og:title" content="Lacquerware | Zhengdaming">
-  <meta property="og:description" content="Zhengdaming Lacquerware: four series of vessels, flower vessels, ornaments and collection pieces, hand-lacquered by intangible cultural heritage artisans, with custom gifting and engraved inscriptions available.">
+  <meta property="og:title" content="Zhengdaming Brand Products | Zhengdaming">
+  <meta property="og:description" content="Four product categories under Zhengdaming: Lacquerware (vessels, flower vessels, ornaments, collection, lacquer jewelry), Lacquer Materials (raw lacquer, refined lacquer, tools, auxiliary materials), ICH Cultural and Creative Products and Master's Handmade, covering a complete lacquer industry chain from material to finished object.">
   <meta property="og:url" content="https://www.zendamin.com/en/brand-ware.html">
   <meta property="og:image" content="https://www.zendamin.com/images/hero-5-share.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lacquerware | Zhengdaming">
-  <meta name="twitter:description" content="Zhengdaming Lacquerware: four series of vessels, flower vessels, ornaments and collection pieces, hand-lacquered by intangible cultural heritage artisans, with custom gifting and engraved inscriptions available.">
+  <meta name="twitter:title" content="Zhengdaming Brand Products | Zhengdaming">
+  <meta name="twitter:description" content="Four product categories under Zhengdaming: Lacquerware (vessels, flower vessels, ornaments, collection, lacquer jewelry), Lacquer Materials (raw lacquer, refined lacquer, tools, auxiliary materials), ICH Cultural and Creative Products and Master's Handmade, covering a complete lacquer industry chain from material to finished object.">
   <meta name="twitter:image" content="https://www.zendamin.com/images/hero-5-share.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +30,49 @@
   <link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/brand-ware.html">
   <link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/brand-ware.html">
   <script type="application/ld+json" id="ld-geo">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"Lacquerware | Zhengdaming","description":"Zhengdaming Lacquerware: four series of vessels, flower vessels, ornaments and collection pieces, hand-lacquered by intangible cultural heritage artisans, with custom gifting and engraved inscriptions available.","url":"https://www.zendamin.com/en/brand-ware.html","inLanguage":"en","isPartOf":{"@id":"https://www.zendamin.com/#website"},"publisher":{"@id":"https://www.zendamin.com/#group"},"primaryImageOfPage":"https://www.zendamin.com/images/hero-5.jpg"}]}</script>
+  <!-- 品牌产品分类页专属样式 -->
+  <style>
+    .bp-cat-list { display: flex; flex-direction: column; gap: 36px; }
+    .bp-cat-row {
+      display: grid;
+      grid-template-columns: 44% 56%;
+      background: var(--bg);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px var(--shadow);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .bp-cat-row:hover { box-shadow: 0 14px 40px var(--shadow-strong); transform: translateY(-4px); }
+    /* 偶数行图文左右互换 */
+    .bp-cat-row:nth-child(even) .bp-cat-img { order: 2; }
+    .bp-cat-img { overflow: hidden; background: var(--bg-warm); }
+    .bp-cat-img img { width: 100%; height: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .bp-cat-row:hover .bp-cat-img img { transform: scale(1.06); }
+    .bp-cat-text { padding: 40px 44px; display: flex; flex-direction: column; justify-content: center; }
+    .bp-cat-text h3 { font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 14px; color: var(--text); }
+    .bp-cat-text h3 a:hover { color: var(--primary); }
+    .bp-cat-desc { font-size: 1rem; color: var(--text-light); line-height: 1.95; margin-bottom: 18px; }
+    .bp-cat-subs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; list-style: none; }
+    .bp-cat-subs a {
+      display: inline-block; font-size: 0.85rem; line-height: 1;
+      padding: 8px 14px; border-radius: 999px;
+      color: var(--text-light); background: var(--bg-warm);
+      border: 1px solid rgba(201,168,92,0.28);
+      transition: all 0.25s ease;
+    }
+    .bp-cat-subs a:hover { color: var(--white); background: var(--primary); border-color: var(--primary); }
+    .bp-cat-more { font-size: 0.95rem; color: var(--primary); font-weight: 500; }
+    .bp-cat-more:hover { color: var(--primary-dark); }
+    @media (max-width: 900px) {
+      .bp-cat-row { grid-template-columns: 1fr; }
+      .bp-cat-row:nth-child(even) .bp-cat-img { order: 0; }
+      .bp-cat-text { padding: 28px 26px; }
+      .bp-cat-text h3 { font-size: 1.35rem; }
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
+<header class="header">
     <div class="topbar">
       <div class="container topbar-inner">
         <div class="topbar-links">
@@ -187,69 +227,86 @@
 
   <main>
     <section class="page-banner">
-      <img src="../images/hero-5.jpg" alt="Zhengdaming Lacquerware">
+      <img src="../images/hero-5.jpg" alt="Zhengdaming Brand Products">
       <div class="overlay"></div>
       <div class="content">
-        <h1>Zhengdaming Lacquerware</h1>
-        <p>Four series — vessels, flower vessels, ornaments, collection — hand-lacquered by intangible cultural heritage artisans</p>
+        <h1>Zhengdaming Brand Products</h1>
+        <p>Lacquerware · Lacquer Materials · ICH Cultural and Creative Products · Master's Handmade</p>
       </div>
     </section>
 
     <div class="breadcrumb">
       <div class="container">
-        <a href="index.html">Home</a> / Lacquerware / Series Overview
+        <a href="index.html">Home</a> / Zhengdaming Brand Products
       </div>
     </div>
 
     <section class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Lacquerware Series</span>
-          <h2 class="section-title">Four Lacquerware Series</h2>
-          <p class="section-desc">From everyday vessels to collector's masterpieces, each piece is hand-lacquered by our artisans, with one record per piece. Custom gifting and engraved inscriptions are available. Select a series for details.</p>
-        </div>
-        <div class="bp-cat-grid">
-          <a href="ware-vessel.html" class="solution-card">
-            <img src="../images/hero-4.jpg" alt="Zhengdaming Lacquerware Vessel Series" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>Vessel Series</h3>
-              <p>Lacquer tea ware, tableware and desk items, built on wood cores with biantu coating and burnishing — bringing Chinese lacquer back to everyday dining.</p>
-              <span class="solution-link">3 items · View series →</span>
+        <div class="bp-cat-list">
+          <div class="bp-cat-row">
+            <a href="ware-vessel.html" class="bp-cat-img"><img src="../images/hero-5.jpg" alt="Zhengdaming Lacquerware" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="ware-vessel.html">Lacquerware</a></h3>
+              <p class="bp-cat-desc">A wood core clad in lacquer. Tea ware, tableware, desk items and display pieces are all hand-lacquered and burnished by our artisans — forms that follow traditional methods, made for everyday use. Custom gifting and engraved inscriptions are available.</p>
+              <ul class="bp-cat-subs">
+                <li><a href="ware-vessel.html">Vessel Series · 21 items</a></li>
+                <li><a href="ware-flower.html">Flower Vessel Series · 6 items</a></li>
+                <li><a href="ware-ornament.html">Ornament Series · 3 items</a></li>
+                <li><a href="ware-collection.html">Collection Series · 3 items</a></li>
+                <li><a href="ware-jewelry.html">Lacquer Jewelry · 13 items</a></li>
+              </ul>
+              <a href="ware-vessel.html" class="bp-cat-more">View Lacquerware →</a>
             </div>
-          </a>
-          <a href="ware-flower.html" class="solution-card">
-            <img src="../images/hero-5.jpg" alt="Zhengdaming Lacquerware Flower Vessel Series" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>Flower Vessel Series</h3>
-              <p>Gold-tracery vases, plain-lacquered plum vases and biantu flower holders, made for flower arrangement and interior display.</p>
-              <span class="solution-link">3 items · View series →</span>
+          </div>
+          <div class="bp-cat-row">
+            <a href="brand-products.html" class="bp-cat-img"><img src="../images/hero-1.jpg" alt="Zhengdaming Lacquer Materials" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="brand-products.html">Lacquer Materials</a></h3>
+              <p class="bp-cat-desc">From lacquer tree planting and raw lacquer tapping to refining, we supply the full range of materials for lacquer art and industrial coating, with lacquer formulated to process requirements and technical guidance provided.</p>
+              <ul class="bp-cat-subs">
+                <li><a href="brand-raw.html">Raw Lacquer</a></li>
+                <li><a href="brand-refined.html">Refined Lacquer</a></li>
+                <li><a href="brand-tools.html">Tools</a></li>
+                <li><a href="brand-aux.html">Auxiliary Materials</a></li>
+                <li><a href="brand-kit.html">Lacquer Craft Material Kit</a></li>
+                <li><a href="brand-drift.html">Floating Lacquer</a></li>
+              </ul>
+              <a href="brand-products.html" class="bp-cat-more">View Lacquer Materials →</a>
             </div>
-          </a>
-          <a href="ware-ornament.html" class="solution-card">
-            <img src="../images/hero-3.jpg" alt="Zhengdaming Lacquerware Ornament Series" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>Ornament Series</h3>
-              <p>Original lacquer paintings and wall panels, maki-e desk mountains, and mother-of-pearl inlay table screens, bringing light to Eastern interiors.</p>
-              <span class="solution-link">3 items · View series →</span>
+          </div>
+          <div class="bp-cat-row">
+            <a href="solution-nonheritage.html" class="bp-cat-img"><img src="../images/solutions/sol-nonheritage.jpg" alt="Zhengdaming ICH Cultural and Creative Products" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="solution-nonheritage.html">ICH Cultural and Creative Products</a></h3>
+              <p class="bp-cat-desc">Cultural and creative products built on Chinese lacquer techniques, together with corporate cultural customisation. We take on the whole process from theme selection and design to prototyping and production, bringing intangible cultural heritage into modern life and into gifting.</p>
+              <ul class="bp-cat-subs">
+                <li><a href="solution-nonheritage.html">ICH Cultural Products Solution</a></li>
+                <li><a href="news-study-tour.html">ICH Study Tours</a></li>
+              </ul>
+              <a href="solution-nonheritage.html" class="bp-cat-more">View ICH Cultural and Creative Products →</a>
             </div>
-          </a>
-          <a href="ware-collection.html" class="solution-card">
-            <img src="../images/hero-new-4.jpg" alt="Zhengdaming Lacquerware Collection Series" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>Collection Series</h3>
-              <p>Collector's masterpieces and custom gift boxes; over one hundred coats of lacquer, collection certificate included — lacquer works made to be passed down.</p>
-              <span class="solution-link">3 items · View series →</span>
+          </div>
+          <div class="bp-cat-row">
+            <a href="master.html" class="bp-cat-img"><img src="../images/hero-new-1.jpg" alt="Zhengdaming Master's Handmade" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="master.html">Master's Handmade</a></h3>
+              <p class="bp-cat-desc">Works made or supervised in person by an Arts and Crafts Master of Shaanxi Province and a provincial-level representative inheritor of lacquering techniques, with one record per piece and a collection certificate included — pieces of artistic value made to be handed down.</p>
+              <ul class="bp-cat-subs">
+                <li><a href="master.html">Master's Works</a></li>
+                <li><a href="card-yuan-duanjiao.html">Yuan Duanjiao</a></li>
+                <li><a href="card-yang-shixin.html">Yang Shixin</a></li>
+              </ul>
+              <a href="master.html" class="bp-cat-more">View Master's Handmade →</a>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
+
+
+<footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">

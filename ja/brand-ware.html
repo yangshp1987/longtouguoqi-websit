@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="正大明漆器：器皿・花器・置物・収蔵の四シリーズ、無形文化遺産の職人による手塗り、ギフト用オーダーと落款の文字入れに対応">
+  <meta name="description" content="正大明ブランド製品の四つのカテゴリー：漆器（器皿・花器・置物・収蔵・漆の装身具）、漆材料（生漆・精製漆・工具・副資材）、無形文化遺産カルチャー・クリエイティブ、大師手作。材料から器物までを一貫して支える漆の産業チェーン。">
   <meta name="theme-color" content="#8C2B1F">
-  <title>漆器 | 正大明</title>
+  <title>正大明ブランド製品 | 正大明</title>
   <!-- 社交分享卡片（微信/微博/Twitter） -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="正大明">
-  <meta property="og:title" content="漆器 | 正大明">
-  <meta property="og:description" content="正大明漆器：器皿・花器・置物・収蔵の四シリーズ、無形文化遺産の職人による手塗り、ギフト用オーダーと落款の文字入れに対応">
+  <meta property="og:title" content="正大明ブランド製品 | 正大明">
+  <meta property="og:description" content="正大明ブランド製品の四つのカテゴリー：漆器（器皿・花器・置物・収蔵・漆の装身具）、漆材料（生漆・精製漆・工具・副資材）、無形文化遺産カルチャー・クリエイティブ、大師手作。材料から器物までを一貫して支える漆の産業チェーン。">
   <meta property="og:url" content="https://www.zendamin.com/ja/brand-ware.html">
   <meta property="og:image" content="https://www.zendamin.com/images/hero-5-share.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="漆器 | 正大明">
-  <meta name="twitter:description" content="正大明漆器：器皿・花器・置物・収蔵の四シリーズ、無形文化遺産の職人による手塗り、ギフト用オーダーと落款の文字入れに対応">
+  <meta name="twitter:title" content="正大明ブランド製品 | 正大明">
+  <meta name="twitter:description" content="正大明ブランド製品の四つのカテゴリー：漆器（器皿・花器・置物・収蔵・漆の装身具）、漆材料（生漆・精製漆・工具・副資材）、無形文化遺産カルチャー・クリエイティブ、大師手作。材料から器物までを一貫して支える漆の産業チェーン。">
   <meta name="twitter:image" content="https://www.zendamin.com/images/hero-5-share.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +30,49 @@
   <link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/brand-ware.html">
   <link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/brand-ware.html">
   <script type="application/ld+json" id="ld-geo">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"漆器 | 正大明","description":"正大明漆器：器皿・花器・置物・収蔵の四シリーズ、無形文化遺産の職人による手塗り、ギフト用オーダーと落款の文字入れに対応","url":"https://www.zendamin.com/ja/brand-ware.html","inLanguage":"ja","isPartOf":{"@id":"https://www.zendamin.com/#website"},"publisher":{"@id":"https://www.zendamin.com/#group"},"primaryImageOfPage":"https://www.zendamin.com/images/hero-5.jpg"}]}</script>
+  <!-- 品牌产品分类页专属样式 -->
+  <style>
+    .bp-cat-list { display: flex; flex-direction: column; gap: 36px; }
+    .bp-cat-row {
+      display: grid;
+      grid-template-columns: 44% 56%;
+      background: var(--bg);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px var(--shadow);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .bp-cat-row:hover { box-shadow: 0 14px 40px var(--shadow-strong); transform: translateY(-4px); }
+    /* 偶数行图文左右互换 */
+    .bp-cat-row:nth-child(even) .bp-cat-img { order: 2; }
+    .bp-cat-img { overflow: hidden; background: var(--bg-warm); }
+    .bp-cat-img img { width: 100%; height: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .bp-cat-row:hover .bp-cat-img img { transform: scale(1.06); }
+    .bp-cat-text { padding: 40px 44px; display: flex; flex-direction: column; justify-content: center; }
+    .bp-cat-text h3 { font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 14px; color: var(--text); }
+    .bp-cat-text h3 a:hover { color: var(--primary); }
+    .bp-cat-desc { font-size: 1rem; color: var(--text-light); line-height: 1.95; margin-bottom: 18px; }
+    .bp-cat-subs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; list-style: none; }
+    .bp-cat-subs a {
+      display: inline-block; font-size: 0.85rem; line-height: 1;
+      padding: 8px 14px; border-radius: 999px;
+      color: var(--text-light); background: var(--bg-warm);
+      border: 1px solid rgba(201,168,92,0.28);
+      transition: all 0.25s ease;
+    }
+    .bp-cat-subs a:hover { color: var(--white); background: var(--primary); border-color: var(--primary); }
+    .bp-cat-more { font-size: 0.95rem; color: var(--primary); font-weight: 500; }
+    .bp-cat-more:hover { color: var(--primary-dark); }
+    @media (max-width: 900px) {
+      .bp-cat-row { grid-template-columns: 1fr; }
+      .bp-cat-row:nth-child(even) .bp-cat-img { order: 0; }
+      .bp-cat-text { padding: 28px 26px; }
+      .bp-cat-text h3 { font-size: 1.35rem; }
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
+<header class="header">
     <div class="topbar">
       <div class="container topbar-inner">
         <div class="topbar-links">
@@ -187,69 +227,86 @@
 
   <main>
     <section class="page-banner">
-      <img src="../images/hero-5.jpg" alt="正大明漆器">
+      <img src="../images/hero-5.jpg" alt="正大明ブランド製品">
       <div class="overlay"></div>
       <div class="content">
-        <h1>正大明漆器</h1>
-        <p>器皿 · 花器 · 置物 · 収蔵の四シリーズ · 無形文化遺産の職人による手塗り</p>
+        <h1>正大明ブランド製品</h1>
+        <p>漆器 · 漆材料 · 無形文化遺産カルチャー・クリエイティブ · 大師手作</p>
       </div>
     </section>
 
     <div class="breadcrumb">
       <div class="container">
-        <a href="index.html">ホーム</a> / 漆器 / シリーズ一覧
+        <a href="index.html">ホーム</a> / 正大明ブランド製品
       </div>
     </div>
 
     <section class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Lacquerware Series</span>
-          <h2 class="section-title">漆器四つのシリーズ</h2>
-          <p class="section-desc">日々使う器皿から典蔵の重器まで、漆器はどれも職人が手で塗り上げ、一点一点に記録を残しています。ギフト用オーダーと落款の文字入れに対応します。クリックしてシリーズの詳細をご覧ください。</p>
-        </div>
-        <div class="bp-cat-grid">
-          <a href="ware-vessel.html" class="solution-card">
-            <img src="../images/hero-4.jpg" alt="正大明漆器 器皿シリーズ" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>器皿シリーズ</h3>
-              <p>天然漆の茶器、食器と文房、木地に変塗と研ぎ出し、天然漆を日々の食卓に取り戻します。</p>
-              <span class="solution-link">3種 · シリーズを見る →</span>
+        <div class="bp-cat-list">
+          <div class="bp-cat-row">
+            <a href="ware-vessel.html" class="bp-cat-img"><img src="../images/hero-5.jpg" alt="正大明漆器" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="ware-vessel.html">漆器</a></h3>
+              <p class="bp-cat-desc">木を胎とし、漆を衣とする。茶器・食器・文房具から陳設の器まで、職人が手作業で塗りと研ぎ出しを施しています。器形は古法を踏まえ、用途は日常に根ざし、ギフト用オーダーと落款の文字入れに対応します。</p>
+              <ul class="bp-cat-subs">
+                <li><a href="ware-vessel.html">器皿シリーズ · 21点</a></li>
+                <li><a href="ware-flower.html">花器シリーズ · 6点</a></li>
+                <li><a href="ware-ornament.html">置物シリーズ · 3点</a></li>
+                <li><a href="ware-collection.html">収蔵シリーズ · 3点</a></li>
+                <li><a href="ware-jewelry.html">漆の装身具 · 13点</a></li>
+              </ul>
+              <a href="ware-vessel.html" class="bp-cat-more">漆器を見る →</a>
             </div>
-          </a>
-          <a href="ware-flower.html" class="solution-card">
-            <img src="../images/hero-5.jpg" alt="正大明漆器 花器シリーズ" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>花器シリーズ</h3>
-              <p>描金の花瓶、素塗りの梅瓶、変塗の花挿し、華道と空間の演出のために作られています。</p>
-              <span class="solution-link">3種 · シリーズを見る →</span>
+          </div>
+          <div class="bp-cat-row">
+            <a href="brand-products.html" class="bp-cat-img"><img src="../images/hero-1.jpg" alt="正大明漆材料" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="brand-products.html">漆材料</a></h3>
+              <p class="bp-cat-desc">漆の木の栽培と漆掻きから精製加工まで、漆芸の制作と工業塗装に必要な材料一式を取り揃えています。工程の要件に応じた漆の調合と技術指導にも対応します。</p>
+              <ul class="bp-cat-subs">
+                <li><a href="brand-raw.html">生漆</a></li>
+                <li><a href="brand-refined.html">精製漆</a></li>
+                <li><a href="brand-tools.html">工具</a></li>
+                <li><a href="brand-aux.html">副資材</a></li>
+                <li><a href="brand-kit.html">漆芸材料セット</a></li>
+                <li><a href="brand-drift.html">漂漆</a></li>
+              </ul>
+              <a href="brand-products.html" class="bp-cat-more">漆材料を見る →</a>
             </div>
-          </a>
-          <a href="ware-ornament.html" class="solution-card">
-            <img src="../images/hero-3.jpg" alt="正大明漆器 置物シリーズ" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>置物シリーズ</h3>
-              <p>オリジナル漆画の壁飾り、蒔絵の文机山子、螺鈿象嵌の座屏、東洋の空間を彩ります。</p>
-              <span class="solution-link">3種 · シリーズを見る →</span>
+          </div>
+          <div class="bp-cat-row">
+            <a href="solution-nonheritage.html" class="bp-cat-img"><img src="../images/solutions/sol-nonheritage.jpg" alt="正大明無形文化遺産カルチャー・クリエイティブ" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="solution-nonheritage.html">無形文化遺産カルチャー・クリエイティブ</a></h3>
+              <p class="bp-cat-desc">天然漆（うるし）の技法を核としたカルチャー・クリエイティブ製品と企業向け文化オーダーを、テーマ選定・デザインから試作・量産まで一貫して請け負い、無形文化遺産を現代の暮らしとギフトの場に届けます。</p>
+              <ul class="bp-cat-subs">
+                <li><a href="solution-nonheritage.html">無形文化遺産文創ソリューション</a></li>
+                <li><a href="news-study-tour.html">無形文化遺産の研修・体験学習</a></li>
+              </ul>
+              <a href="solution-nonheritage.html" class="bp-cat-more">カルチャー・クリエイティブを見る →</a>
             </div>
-          </a>
-          <a href="ware-collection.html" class="solution-card">
-            <img src="../images/hero-new-4.jpg" alt="正大明漆器 収蔵シリーズ" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>収蔵シリーズ</h3>
-              <p>典蔵の重器とオーダーのギフトボックス、百回にわたる塗り、収蔵証明書付き、次代へ伝える天然漆の作品です。</p>
-              <span class="solution-link">3種 · シリーズを見る →</span>
+          </div>
+          <div class="bp-cat-row">
+            <a href="master.html" class="bp-cat-img"><img src="../images/hero-new-1.jpg" alt="正大明大師手作" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="master.html">大師手作</a></h3>
+              <p class="bp-cat-desc">陕西省工芸美術大師、省級無形文化遺産「髹漆技法」代表性伝承者がみずから制作または監修した作品です。一点一点に記録を残し、収蔵証明書を添えており、芸術的価値と次代へ伝える意義を兼ね備えています。</p>
+              <ul class="bp-cat-subs">
+                <li><a href="master.html">大師の作品</a></li>
+                <li><a href="card-yuan-duanjiao.html">袁端姣</a></li>
+                <li><a href="card-yang-shixin.html">杨世鑫</a></li>
+              </ul>
+              <a href="master.html" class="bp-cat-more">大師手作を見る →</a>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
+
+
+<footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">

@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="正大明漆器：器皿、花器、摆件、收藏四大系列，非遗匠人手工髹饰，支持礼赠定制与落款刻字。">
+  <meta name="description" content="正大明品牌产品四大品类：漆器（器皿、花器、摆件、收藏、漆艺首饰）、漆材料（生漆、精制漆、工具、辅料）、非遗文创与大师手作，覆盖材料到器物的完整漆产业链。">
   <meta name="theme-color" content="#8C2B1F">
-  <title>漆器 | 正大明</title>
+  <title>正大明品牌产品 | 正大明</title>
   <!-- 社交分享卡片（微信/微博/Twitter） -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="正大明">
-  <meta property="og:title" content="漆器 | 正大明">
-  <meta property="og:description" content="正大明漆器：器皿、花器、摆件、收藏四大系列，非遗匠人手工髹饰，支持礼赠定制与落款刻字。">
+  <meta property="og:title" content="正大明品牌产品 | 正大明">
+  <meta property="og:description" content="正大明品牌产品四大品类：漆器（器皿、花器、摆件、收藏、漆艺首饰）、漆材料（生漆、精制漆、工具、辅料）、非遗文创与大师手作，覆盖材料到器物的完整漆产业链。">
   <meta property="og:url" content="https://www.zendamin.com/brand-ware.html">
   <meta property="og:image" content="https://www.zendamin.com/images/hero-5-share.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="漆器 | 正大明">
-  <meta name="twitter:description" content="正大明漆器：器皿、花器、摆件、收藏四大系列，非遗匠人手工髹饰，支持礼赠定制与落款刻字。">
+  <meta name="twitter:title" content="正大明品牌产品 | 正大明">
+  <meta name="twitter:description" content="正大明品牌产品四大品类：漆器（器皿、花器、摆件、收藏、漆艺首饰）、漆材料（生漆、精制漆、工具、辅料）、非遗文创与大师手作，覆盖材料到器物的完整漆产业链。">
   <meta name="twitter:image" content="https://www.zendamin.com/images/hero-5-share.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +30,46 @@
   <link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/brand-ware.html">
   <link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/brand-ware.html">
   <script type="application/ld+json" id="ld-geo">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"漆器 | 正大明","description":"正大明漆器：器皿、花器、摆件、收藏四大系列，非遗匠人手工髹饰，支持礼赠定制与落款刻字。","url":"https://www.zendamin.com/brand-ware.html","inLanguage":"zh-CN","isPartOf":{"@id":"https://www.zendamin.com/#website"},"publisher":{"@id":"https://www.zendamin.com/#group"},"primaryImageOfPage":"https://www.zendamin.com/images/hero-5.jpg"}]}</script>
+  <!-- 品牌产品分类页专属样式 -->
+  <style>
+    .bp-cat-list { display: flex; flex-direction: column; gap: 36px; }
+    .bp-cat-row {
+      display: grid;
+      grid-template-columns: 44% 56%;
+      background: var(--bg);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px var(--shadow);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .bp-cat-row:hover { box-shadow: 0 14px 40px var(--shadow-strong); transform: translateY(-4px); }
+    /* 偶数行图文左右互换 */
+    .bp-cat-row:nth-child(even) .bp-cat-img { order: 2; }
+    .bp-cat-img { overflow: hidden; background: var(--bg-warm); }
+    .bp-cat-img img { width: 100%; height: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .bp-cat-row:hover .bp-cat-img img { transform: scale(1.06); }
+    .bp-cat-text { padding: 40px 44px; display: flex; flex-direction: column; justify-content: center; }
+    .bp-cat-text h3 { font-family: var(--font-serif); font-size: 1.6rem; margin-bottom: 14px; color: var(--text); }
+    .bp-cat-text h3 a:hover { color: var(--primary); }
+    .bp-cat-desc { font-size: 1rem; color: var(--text-light); line-height: 1.95; margin-bottom: 18px; }
+    .bp-cat-subs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; list-style: none; }
+    .bp-cat-subs a {
+      display: inline-block; font-size: 0.85rem; line-height: 1;
+      padding: 8px 14px; border-radius: 999px;
+      color: var(--text-light); background: var(--bg-warm);
+      border: 1px solid rgba(201,168,92,0.28);
+      transition: all 0.25s ease;
+    }
+    .bp-cat-subs a:hover { color: var(--white); background: var(--primary); border-color: var(--primary); }
+    .bp-cat-more { font-size: 0.95rem; color: var(--primary); font-weight: 500; }
+    .bp-cat-more:hover { color: var(--primary-dark); }
+    @media (max-width: 900px) {
+      .bp-cat-row { grid-template-columns: 1fr; }
+      .bp-cat-row:nth-child(even) .bp-cat-img { order: 0; }
+      .bp-cat-text { padding: 28px 26px; }
+      .bp-cat-text h3 { font-size: 1.35rem; }
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -187,73 +227,79 @@
 
   <main>
     <section class="page-banner">
-      <img src="images/hero-5.jpg" alt="正大明漆器">
+      <img src="images/hero-5.jpg" alt="正大明品牌产品">
       <div class="overlay"></div>
       <div class="content">
-        <h1>正大明漆器</h1>
-        <p>器皿 · 花器 · 摆件 · 收藏四大系列 · 非遗匠人手工髹饰</p>
+        <h1>正大明品牌产品</h1>
+        <p>漆器 · 漆材料 · 非遗文创 · 大师手作</p>
       </div>
     </section>
 
     <div class="breadcrumb">
       <div class="container">
-        <a href="index.html">首页</a> / 漆器 / 系列总览
+        <a href="index.html">首页</a> / 正大明品牌产品
       </div>
     </div>
 
     <section class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Lacquerware Series</span>
-          <h2 class="section-title">五大漆器系列</h2>
-          <p class="section-desc">从日用器皿到典藏重器，每一件漆器均由匠人手工髹饰、一器一档，支持礼赠定制与落款刻字。点击进入系列查看详情。</p>
-        </div>
-        <div class="bp-cat-grid">
-          <a href="ware-vessel.html" class="solution-card">
-            <img src="images/hero-4.jpg" alt="正大明漆器器皿系列" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>器皿系列</h3>
-              <p>大漆茶器、餐具、笔筒漆盘与文房，木胎变涂推光，让大漆回到一日三餐。</p>
-              <span class="solution-link">21 款 · 查看系列 →</span>
+        <div class="bp-cat-list">
+          <div class="bp-cat-row">
+            <a href="ware-vessel.html" class="bp-cat-img"><img src="images/hero-5.jpg" alt="正大明漆器" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="ware-vessel.html">漆器</a></h3>
+              <p class="bp-cat-desc">以木为胎、以漆为衣。茶器、餐具、文房与陈设诸器皆由匠人手工髹涂推光，器形承古法、用途入日常，支持礼赠定制与落款刻字。</p>
+              <ul class="bp-cat-subs">
+                <li><a href="ware-vessel.html">器皿系列 · 21 款</a></li>
+                <li><a href="ware-flower.html">花器系列 · 6 款</a></li>
+                <li><a href="ware-ornament.html">摆件系列 · 3 款</a></li>
+                <li><a href="ware-collection.html">收藏系列 · 3 款</a></li>
+                <li><a href="ware-jewelry.html">漆艺首饰 · 13 款</a></li>
+              </ul>
+              <a href="ware-vessel.html" class="bp-cat-more">查看漆器 →</a>
             </div>
-          </a>
-          <a href="ware-flower.html" class="solution-card">
-            <img src="images/hero-5.jpg" alt="正大明漆器花器系列" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>花器系列</h3>
-              <p>描金花瓶、素髹梅瓶、变涂花插，为花道与空间陈设而作。</p>
-              <span class="solution-link">6 款 · 查看系列 →</span>
+          </div>
+          <div class="bp-cat-row">
+            <a href="brand-products.html" class="bp-cat-img"><img src="images/hero-1.jpg" alt="正大明漆材料" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="brand-products.html">漆材料</a></h3>
+              <p class="bp-cat-desc">从漆树种植、生漆采割到精制加工，覆盖漆艺创作与工业涂装所需的全套材料，可按工艺需求配漆并提供技术指导。</p>
+              <ul class="bp-cat-subs">
+                <li><a href="brand-raw.html">生漆</a></li>
+                <li><a href="brand-refined.html">精制漆</a></li>
+                <li><a href="brand-tools.html">工具</a></li>
+                <li><a href="brand-aux.html">辅料</a></li>
+                <li><a href="brand-kit.html">漆艺材料包</a></li>
+                <li><a href="brand-drift.html">漂漆</a></li>
+              </ul>
+              <a href="brand-products.html" class="bp-cat-more">查看漆材料 →</a>
             </div>
-          </a>
-          <a href="ware-ornament.html" class="solution-card">
-            <img src="images/hero-3.jpg" alt="正大明漆器摆件系列" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>摆件系列</h3>
-              <p>原创漆画壁饰、莳绘案头山子、螺钿镶嵌座屏与镶玉台屏，点亮东方空间。</p>
-              <span class="solution-link">3 款 · 查看系列 →</span>
+          </div>
+          <div class="bp-cat-row">
+            <a href="solution-nonheritage.html" class="bp-cat-img"><img src="images/solutions/sol-nonheritage.jpg" alt="正大明非遗文创" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="solution-nonheritage.html">非遗文创</a></h3>
+              <p class="bp-cat-desc">以大漆技艺为核心的文创产品与企业文化定制，从选题、设计到打样量产一体承接，让非遗真正走进现代生活与礼赠场景。</p>
+              <ul class="bp-cat-subs">
+                <li><a href="solution-nonheritage.html">非遗文创解决方案</a></li>
+                <li><a href="news-study-tour.html">非遗研学</a></li>
+              </ul>
+              <a href="solution-nonheritage.html" class="bp-cat-more">查看非遗文创 →</a>
             </div>
-          </a>
-          <a href="ware-collection.html" class="solution-card">
-            <img src="images/hero-new-4.jpg" alt="正大明漆器收藏系列" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>收藏系列</h3>
-              <p>典藏重器与定制礼盒，百道髹涂、附收藏证书，可传世的大漆之作。</p>
-              <span class="solution-link">3 款 · 查看系列 →</span>
+          </div>
+          <div class="bp-cat-row">
+            <a href="master.html" class="bp-cat-img"><img src="images/hero-new-1.jpg" alt="正大明大师手作" loading="lazy"></a>
+            <div class="bp-cat-text">
+              <h3><a href="master.html">大师手作</a></h3>
+              <p class="bp-cat-desc">由陕西省工艺美术大师、省级髹漆技艺非遗传承人亲制或监制的作品，一器一档、附收藏证书，兼具艺术价值与传世意义。</p>
+              <ul class="bp-cat-subs">
+                <li><a href="master.html">大师作品</a></li>
+                <li><a href="card-yuan-duanjiao.html">袁端姣</a></li>
+                <li><a href="card-yang-shixin.html">杨世鑫</a></li>
+              </ul>
+              <a href="master.html" class="bp-cat-more">查看大师手作 →</a>
             </div>
-          </a>
-          <a href="ware-jewelry.html" class="solution-card">
-            <img src="images/products/p26.jpg" alt="正大明漆艺首饰" class="solution-bg">
-            <div class="solution-overlay"></div>
-            <div class="solution-body">
-              <h3>漆艺首饰</h3>
-              <p>漂漆猫、葫芦挂件、手链手镯、耳饰簪子，把大漆戴在身上的日常小物。</p>
-              <span class="solution-link">13 款 · 查看系列 →</span>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>

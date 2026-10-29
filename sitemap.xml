@@ -2202,7 +2202,7 @@
   </url>
   <url>
     <loc>https://www.zendamin.com/products.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/products.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/products.html"/>
@@ -2212,7 +2212,7 @@
   </url>
   <url>
     <loc>https://www.zendamin.com/en/products.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/products.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/products.html"/>
@@ -2222,7 +2222,7 @@
   </url>
   <url>
     <loc>https://www.zendamin.com/ja/products.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/products.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/products.html"/>
@@ -2232,7 +2232,7 @@
   </url>
   <url>
     <loc>https://www.zendamin.com/ko/products.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/products.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/products.html"/>
@@ -2321,6 +2321,46 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/solution-architecture.html"/>
   </url>
   <url>
+    <loc>https://www.zendamin.com/solution-corporate-gift.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.zendamin.com/ja/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/solution-corporate-gift.html"/>
+  </url>
+  <url>
+    <loc>https://www.zendamin.com/en/solution-corporate-gift.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.zendamin.com/ja/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/solution-corporate-gift.html"/>
+  </url>
+  <url>
+    <loc>https://www.zendamin.com/ja/solution-corporate-gift.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.zendamin.com/ja/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/solution-corporate-gift.html"/>
+  </url>
+  <url>
+    <loc>https://www.zendamin.com/ko/solution-corporate-gift.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.zendamin.com/ja/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/solution-corporate-gift.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/solution-corporate-gift.html"/>
+  </url>
+  <url>
     <loc>https://www.zendamin.com/solution-guqin.html</loc>
     <lastmod>2026-10-16</lastmod>
     <priority>0.8</priority>
@@ -2362,7 +2402,7 @@
   </url>
   <url>
     <loc>https://www.zendamin.com/solution-industry.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-industry.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-industry.html"/>
@@ -2372,7 +2412,7 @@
   </url>
   <url>
     <loc>https://www.zendamin.com/en/solution-industry.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-industry.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-industry.html"/>
@@ -2382,7 +2422,7 @@
   </url>
   <url>
     <loc>https://www.zendamin.com/ja/solution-industry.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-industry.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-industry.html"/>
@@ -2392,7 +2432,7 @@
   </url>
   <url>
     <loc>https://www.zendamin.com/ko/solution-industry.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-industry.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-industry.html"/>
@@ -2439,6 +2479,46 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.zendamin.com/ja/solution-nonheritage.html"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/solution-nonheritage.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/solution-nonheritage.html"/>
+  </url>
+  <url>
+    <loc>https://www.zendamin.com/solution-raw-supply.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.zendamin.com/ja/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/solution-raw-supply.html"/>
+  </url>
+  <url>
+    <loc>https://www.zendamin.com/en/solution-raw-supply.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.zendamin.com/ja/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/solution-raw-supply.html"/>
+  </url>
+  <url>
+    <loc>https://www.zendamin.com/ja/solution-raw-supply.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.zendamin.com/ja/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/solution-raw-supply.html"/>
+  </url>
+  <url>
+    <loc>https://www.zendamin.com/ko/solution-raw-supply.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.zendamin.com/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zendamin.com/en/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.zendamin.com/ja/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.zendamin.com/ko/solution-raw-supply.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.zendamin.com/solution-raw-supply.html"/>
   </url>
   <url>
     <loc>https://www.zendamin.com/solution-restoration.html</loc>
